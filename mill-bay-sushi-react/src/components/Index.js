@@ -2,10 +2,8 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
 class Index extends Component {
-  constructor () {
-  super();
-  this.state = {intro: []}
-}
+  state = {intro: []}
+
 
   componentDidMount() {
     fetch('/index')

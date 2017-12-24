@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
+import './css/Menu.css';
 import {Link} from 'react-router-dom';
 
 class Menu extends Component {
-  constructor () {
-  super();
-  this.state = {menus: []}
-}
+  state = {menus: []}
 
   componentDidMount() {
     fetch('/menu')
@@ -14,12 +12,24 @@ class Menu extends Component {
   }
 
   render() {
+    const style = {
+      width: '60%',
+      margin: 'auto',
+      border: '1px solid #eee',
+      boxShadow: '0 2px 3px #ccc',
+      padding: '16px',
+      textAlign: 'center',
+      maringTop: '10px',
+      };
+
     return (
-      <div className="Index">
+      <div className="Menu">
         <h1>Menu</h1>
-        {this.state.menus.map(list =>
-          <div>{list.food}{list.price}</div>
-        )}
+        <div style={style}>
+          {this.state.menus.map(list =>
+            <div>{list.food}{list.price}</div>
+          )}
+        </div>
       </div>
     );
   }
