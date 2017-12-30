@@ -1,38 +1,45 @@
 import React, {Component} from 'react';
-import './css/Menu.css';
+import Appetizer from './menus/Appetizer'
+import classes from './css/Menu.css';
 import {Link} from 'react-router-dom';
 
 class Menu extends Component {
-  state = {menus: []}
-
+  state = {menu: []}
   componentDidMount() {
     fetch('/menu')
       .then(res => res.json())
-      .then(menus => this.setState({ menus }));
+      .then(menu => this.setState({ menu }));
   }
 
-  render() {
-    const style = {
-      width: '60%',
-      margin: 'auto',
-      border: '1px solid #eee',
-      boxShadow: '0 2px 3px #ccc',
-      padding: '16px',
-      textAlign: 'center',
-      maringTop: '10px',
-      };
+  showMenu = (id) => {
+    const clickedMenu = {...this.state.menu[id]};
+    const show = clickedMenu.show
+    const menus = [...this.state.menu]
+    menus[id].show = !show
+    this.setState({menu: menus})
+  }
 
-    return (
-      <div className="Menu">
-        <h1>Menu</h1>
-        <div style={style}>
-          {this.state.menus.map(list =>
-            <div>{list.food}{list.price}</div>
-          )}
+    render() {
+
+      return (
+        <div className="Menu">
+          <h1>Menu</h1>
+          <div>
+            {this.state.menu.map(list =>
+              <div key={list.id} className={classes.Menus} onClick={() => this.showMenu(list.id)}>{list.name}</div>
+            )}
+          </div>
+          <div>
+            {this.state.menu.map(types =>
+              {if (types.show === true) {
+                  return <Appetizer types={types.food} click={() => this.showMenu(types.id)} />
+              }}
+            )}
+          </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
+
 }
 
 
