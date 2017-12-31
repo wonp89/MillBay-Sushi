@@ -1,14 +1,32 @@
 .Menus {
-  width: 60%;
-  margin: auto;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
-  padding: 16px;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+}
+
+.Menus:hover {
+  color: red;
+}
+
+.menuHeading {
+  text-align: center;
+}
+
+.listName {
+  padding: 15px;
+  background-color: rgba(221, 221, 221, 0.5);
 }
 
 #menuHeading {
   color: red;
   text-align: center;
+}
+
+#AllTypes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

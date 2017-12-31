@@ -1,16 +1,18 @@
 import React from 'react';
-import Appetizers from './menusNames/Appetizers';
-import classes from '../css/Appetizer.css';
+import FoodList from './menusNames/FoodList';
+import classes from '../css/TypesOfFood.css';
 import {Animated} from "react-animated-css";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const menuTypes =  (props) => {
 
   const foodNames = () =>
     props.types.map((food, index) =>
-      <Appetizers key={index} name={food.name} price={food.price} />
+      <FoodList key={index} name={food.name} price={food.price} />
     )
 
     return (
+      <MuiThemeProvider>
         <div className={classes.overlay}>
           <a href="javascript:void(0)" className={classes.closebtn} onClick={props.click}>&times;</a>
           <div className={classes.overlayContent}>
@@ -19,6 +21,7 @@ const menuTypes =  (props) => {
             </Animated>
           </div>
         </div>
+      </MuiThemeProvider>
     )
   }
 

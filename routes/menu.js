@@ -24,7 +24,98 @@ router.get('/menu', function(req, res, next) {
           price: "5.45"
         }
       ]
-    }
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        },
+        {
+          name: "salmon",
+          price: "5.45"
+        }
+      ]
+    },
   ]);
 });
 
