@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import TypesOfFood from './menus/TypesOfFood'
 import classes from './css/Menu.css';
 import Panel from './img/panel.png'
+import sampleSushi from './img/sampleSushi.png'
 import {Link} from 'react-router-dom';
+import {Animated} from "react-animated-css";
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import WOW from 'wowjs';
 
@@ -25,22 +27,27 @@ class Menu extends Component {
 
     render() {
       const style = {
-        backgroundImage: 'url(' + Panel + ')',
+        backgroundImage: 'url(' + Panel + ')'
+      };
+      const style2 = {
+        backgroundImage: 'url(' + sampleSushi + ')'
       };
 
       return (
       // <MuiThemeProvider>
         <div className="Menu">
-          <h1 className={classes.menuHeading}>Menu</h1>
-          <div id={classes.AllTypes}>
-              {this.state.menu.map((list, index) =>
-                  <div key={list.id} zDepth={2} style={style} className={classes.Menus} onClick={() => this.showMenu(list.id)}><p className={classes.listName}>{list.name}</p></div>
-              )}
-          </div>
+          <h1 id={classes.menuHeading}>Menu</h1>
+          <Animated animationIn="slideInLeft" animationOut="fadeOut" isVisible={true}>
+            <div id={classes.AllTypes}>
+                {this.state.menu.map( (list, index) =>
+                    <div key={index} style={style} className={classes.Menus} onClick={() => this.showMenu(list.id)}><p className={classes.listName}>{list.name}</p><div className={classes.sushiImage} style={style2}></div></div>
+                )}
+            </div>
+          </Animated>
           <div>
-            {this.state.menu.map(types  =>
+            {this.state.menu.map((types, index)  =>
               {if (types.show === true) {
-                  return <TypesOfFood key={types.id} types={types.food} click={() => this.showMenu(types.id)} />
+                  return <TypesOfFood key={index} types={types.food} click={() => this.showMenu(types.id)} />
               }}
             )}
           </div>
