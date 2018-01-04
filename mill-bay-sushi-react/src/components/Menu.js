@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
+import Intro from './Intro';
+import MenuPanels from './menus/MenuPanels';
+import MenuImages from './menus/menuImages/MenuImages';
+import Footer from './menus/footer/Footer';
 import TypesOfFood from './menus/TypesOfFood'
 import classes from './css/Menu.css';
-import Panel from './img/panel.png'
-import sampleSushi from './img/sampleSushi.png'
 import {Link} from 'react-router-dom';
-import {Animated} from "react-animated-css";
-// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import WOW from 'wowjs';
+import WOW from 'wowjs';
 
 class Menu extends Component {
   state = {menu: []}
   componentDidMount() {
-    // new WOW.WOW().init();
+    new WOW.WOW().init();
     fetch('/menu')
       .then(res => res.json())
       .then(menu => this.setState({ menu }));
@@ -23,27 +23,20 @@ class Menu extends Component {
     const menus = [...this.state.menu]
     menus[id].show = !show
     this.setState({menu: menus})
+    menus[id].show  === true ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
   }
 
     render() {
-      const style = {
-        backgroundImage: 'url(' + Panel + ')'
-      };
-      const style2 = {
-        backgroundImage: 'url(' + sampleSushi + ')'
-      };
-
       return (
-      // <MuiThemeProvider>
         <div className="Menu">
-          <h1 id={classes.menuHeading}>Menu</h1>
-          <Animated animationIn="slideInLeft" animationOut="fadeOut" isVisible={true}>
-            <div id={classes.AllTypes}>
-                {this.state.menu.map( (list, index) =>
-                    <div key={index} style={style} className={classes.Menus} onClick={() => this.showMenu(list.id)}><p className={classes.listName}>{list.name}</p><div className={classes.sushiImage} style={style2}></div></div>
-                )}
-            </div>
-          </Animated>
+          <h1 id={classes.menuHeading}>Mill Bay Sushi</h1>
+          <Intro />
+          <div id={classes.AllTypes} className="wow slideInLeft">
+              {this.state.menu.map( (list, index) =>
+                 <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
+              )}
+          </div>
+          <MenuImages />
           <div>
             {this.state.menu.map((types, index)  =>
               {if (types.show === true) {
@@ -51,8 +44,8 @@ class Menu extends Component {
               }}
             )}
           </div>
+          <Footer />
         </div>
-      // </MuiThemeProvider>
       );
     }
 

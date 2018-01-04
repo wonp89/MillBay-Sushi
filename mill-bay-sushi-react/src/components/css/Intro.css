@@ -1,0 +1,23 @@
+#Intro{
+  margin: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border:solid 1px black;
+}
+
+#IntroHeading {
+  margin-top: 0;
+  margin: 20px;
+}
+
+#IntroContent {
+  border-top: solid 1px black;
+  margin: 20px;
+  padding-top: 20px;
+}
+
+#IntroImages {
+  height:500px;
+  width:100%;
+  background-color: red;
+}

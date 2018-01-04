@@ -8,17 +8,13 @@ import {
 } from 'react-router-dom';
 
 //pages
-import Index from './Index';
 import Menu from './Menu';
-import About from './About';
 import Contact from './Contact';
 
 class App extends Component {
   state = {
           navItems: [
-                      {name: 'Home', to: '/'},
-                      {name: 'Menu', to: '/menu'},
-                      {name: 'About', to: '/about'},
+                      {name: 'Home', to: '/', style: {backgroundColor: '#4CAF50'}},
                       {name: 'Contact', to: '/contact'}
                     ]
           }
@@ -36,6 +32,7 @@ class App extends Component {
             {this.state.navItems.map(navItem =>
              <li><Link
              to={navItem.to}
+             style={this.state.active === undefined ? navItem.style : {}}
              className={this.state.active === navItem ? classes.active : {}}
              onClick={this.selectedNavItem.bind(this, navItem)}
              >
@@ -46,9 +43,7 @@ class App extends Component {
         </nav>
         <Switch>
           <Route path="/contact" component={Contact} />
-          <Route path="/menu" component={Menu} />
-          <Route path="/about" component={About} />
-          <Route path="/" component={Index} />
+          <Route path="/" component={Menu} />
         </Switch>
       </div>
     </Router>

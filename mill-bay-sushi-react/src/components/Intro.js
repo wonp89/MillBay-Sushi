@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
+import classes from './css/Intro.css';
 import {Link} from 'react-router-dom';
 
-class Index extends Component {
+class Intro extends Component {
   state = {intro: []}
-
 
   componentDidMount() {
     fetch('/index')
@@ -13,14 +13,16 @@ class Index extends Component {
 
   render() {
     return (
-      <div className="Index">
-        <h1>Welcome</h1>
+      <div id={classes.Intro}>
+        <h1 id={classes.IntroHeading}>Welcome</h1>
         {this.state.intro.map(title =>
-          <div>{title.title}</div>
+          <div id={classes.IntroContent}>{title.title}</div>
         )}
+        <div id={classes.IntroImages}>
+        </div>
       </div>
     );
   }
 }
 
-export default Index;
+export default Intro;

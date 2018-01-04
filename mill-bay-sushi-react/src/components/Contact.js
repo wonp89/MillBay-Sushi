@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import Map from './map/Map'
+import classes from './css/Contact.css';
 import {Link} from 'react-router-dom';
 
 class Contact extends Component {
   state = {contactInfo: []}
-
 
   componentDidMount() {
     fetch('/contact')
@@ -13,11 +14,12 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="Index">
-        <h1>Contact</h1>
+      <div>
+        <h1 id={classes.contactHeading}>Contact</h1>
         {this.state.contactInfo.map(info =>
-          <div>{info.phone}{info.address}</div>
+          <div>{info.phone} {info.address}</div>
         )}
+        <Map />
       </div>
     );
   }

@@ -8,7 +8,7 @@ const menuTypes =  (props) => {
 
   const foodNames = () =>
     props.types.map((food, index) =>
-      <FoodList key={index} name={food.name} price={food.price} />
+      <FoodList key={index} name={food.name} price={food.price} about={food.about} />
     )
 
     return (
@@ -16,7 +16,7 @@ const menuTypes =  (props) => {
         <div className={classes.overlay}>
           <a href="javascript:void(0)" className={classes.closebtn} onClick={props.click}>&times;</a>
           <div className={classes.overlayContent}>
-            <Animated animationIn="fadeInUp" animationOut="fadeOut" isVisible={true}>
+            <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
               {foodNames()}
             </Animated>
           </div>
