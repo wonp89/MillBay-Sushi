@@ -13,19 +13,16 @@ const style = {
 
 //Array of images
 const images = [
-                {
-                  backgroundImage: 'url(' + sampleSushi + ')'
-                },
-                {
-                  backgroundImage: 'url(' + sampleSushi2 + ')'
-                }
-              ];
-
+                { backgroundImage: 'url(' + sampleSushi + ')' },
+                { backgroundImage: 'url(' + sampleSushi2 + ')' }
+               ];
 
 const MenuPanels =  (props) => {
-    return (
-          <div style={style} className={classes.Menus} onClick={props.click}><p className={classes.listName}>{props.name}</p><div className={classes.sushiImage} style={images[props.index]}></div></div>
-    )
-  }
+    return  (
+            <div>
+                <div style={style} className={classes.Menus} onClick={props.click}><p className={classes.listName}>{props.name}</p><div className={classes.sushiImage} style={images[props.index]}></div></div>
+            </div>
+            )
+}
 
 export default MenuPanels;

@@ -1,16 +1,15 @@
-#menuHeading {
-  color: red;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-  background-color: #50af50;
-  color: white;
-  height: 200px;
-}
-
 #AllTypes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+#menuHeading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
 }

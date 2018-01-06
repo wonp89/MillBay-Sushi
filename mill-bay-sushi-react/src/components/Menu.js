@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import TopIllustration from './menus/TopIllustration'
 import Intro from './Intro';
+import forest from './img/forest.png'
 import MenuPanels from './menus/MenuPanels';
 import MenuImages from './menus/menuImages/MenuImages';
 import Footer from './menus/footer/Footer';
@@ -27,11 +29,25 @@ class Menu extends Component {
   }
 
     render() {
+
+      const forestParallax = {
+        backgroundImage: 'url(' + forest + ')',
+        minHeight: '100px',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        height: '400px',
+        marginTop: '100px'
+      }
+
       return (
-        <div className="Menu">
-          <h1 id={classes.menuHeading}>Mill Bay Sushi</h1>
+        <div id="Menu">
+          <TopIllustration />
           <Intro />
+          <div  style={forestParallax} ></div>
           <div id={classes.AllTypes} className="wow slideInLeft">
+              <h1 id={classes.menuHeading}>Menu</h1>
               {this.state.menu.map( (list, index) =>
                  <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
               )}
@@ -50,6 +66,5 @@ class Menu extends Component {
     }
 
 }
-
 
 export default Menu;

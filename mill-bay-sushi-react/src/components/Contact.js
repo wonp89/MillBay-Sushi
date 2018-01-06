@@ -15,11 +15,17 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <h1 id={classes.contactHeading}>Contact</h1>
-        {this.state.contactInfo.map(info =>
-          <div>{info.phone} {info.address}</div>
-        )}
-        <Map />
+        <div id={classes.contactHeading}>
+        <h1>Contact</h1>
+          {this.state.contactInfo.map(info =>
+            <div>{info.phone} {info.address}</div>
+          )}
+        </div>
+          <Map googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `400px` }} />}
+          mapElement={<div style={{ height: `100%` }} />}
+          />
       </div>
     );
   }

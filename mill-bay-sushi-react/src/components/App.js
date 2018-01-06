@@ -14,7 +14,7 @@ import Contact from './Contact';
 class App extends Component {
   state = {
           navItems: [
-                      {name: 'Home', to: '/', style: {backgroundColor: '#4CAF50'}},
+                      {name: 'Home', to: '/', style: {backgroundColor: 'black'}},
                       {name: 'Contact', to: '/contact'}
                     ]
           }
@@ -32,7 +32,7 @@ class App extends Component {
             {this.state.navItems.map(navItem =>
              <li><Link
              to={navItem.to}
-             style={this.state.active === undefined ? navItem.style : {}}
+            //  style={this.state.active === undefined ? navItem.style : {}}
              className={this.state.active === navItem ? classes.active : {}}
              onClick={this.selectedNavItem.bind(this, navItem)}
              >

@@ -1,12 +1,20 @@
-import React from 'react';
-import classes from '../css/Map.css'
+import React, { Component } from 'react';
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker,
+} from "react-google-maps";
 
-const map =  (props) => {
+const MapWithAMarker = withScriptjs(withGoogleMap(props =>
+  <GoogleMap
+    defaultZoom={15}
+    defaultCenter={{ lat: 48.432664, lng: -123.321773 }}
+  >
+    <Marker
+      position={{ lat: 48.432664, lng: -123.321773 }}
+    />
+  </GoogleMap>
+));
 
-    return (
-        <div id={classes.map}>
-        </div>
-    )
-  }
-
-export default map;
+export default MapWithAMarker

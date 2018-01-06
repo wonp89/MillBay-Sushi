@@ -1,11 +1,10 @@
-#contactHeading {
+#homeHeading {
   color: red;
   text-align: center;
   margin: 0;
   background-color: black;
   color: white;
-  height: 300px;
-  padding-top: 20px;
-  background-color: black;
-
+  height: 500px;
+  display: flex;
+  flex-direction: row;
 }

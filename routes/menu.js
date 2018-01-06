@@ -177,6 +177,87 @@ router.get('/menu', function(req, res, next) {
         }
       ]
     },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 1, name: 'Baked Roll', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
   ]);
 });
 

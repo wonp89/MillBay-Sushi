@@ -24,7 +24,7 @@ ul.topnav li a:hover:not(.active) {
 }
 
 ul.topnav li a.active {
-    background-color: #4CAF50;
+    background-color: black;
 }
 
 @media screen and (max-width: 600px){
