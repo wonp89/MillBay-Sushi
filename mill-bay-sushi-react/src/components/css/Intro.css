@@ -37,3 +37,13 @@ img {
   background-color: grey;
   margin-top: 100px;
 }
+
+#scrollToMenu {
+  border: solid 3px #5162dd;
+  background-color:#596dff;
+  color:white;
+  padding: 20px;
+}
+#scrollToMenu:hover {
+  background-color: #4552b0;
+}

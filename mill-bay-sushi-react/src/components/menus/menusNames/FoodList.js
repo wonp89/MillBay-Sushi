@@ -2,20 +2,23 @@ import React from 'react';
 
 const appetizers = (props) => {
   const style = {
-    border: 'solid 1px white',
-    width: '60%',
+    borderBottom: 'dotted 1px black',
+    width: '90%',
     margin: 'auto',
-    marginTop: '20px',
     color: 'black',
-    borderRadius: '5px',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    marginTop: '0'
+  }
+
+  const container = {
+    display: 'flex',
+    justifyContent: 'space-between'
   }
 
 //remove width later and change to container for name and price for aligning
   const nameStyle = {
-    color: 'blue',
+    color: 'black',
     display: 'inline-block',
-    marginLeft: '20px',
     width: '85%',
     marginBottom: '0'
   }
@@ -24,21 +27,22 @@ const appetizers = (props) => {
     display: 'inline-block',
     marginBottom: '0',
     marginLeft: '20px',
-    color: 'blue',
-    marginRight: '20px'
+    color: 'black'
   }
 
   const paragraphStyle = {
     color: '#919191',
-    paddingTop: '5px',
-    margin: '10px',
-    marginLeft: '20px'
+    fontStyle: 'italic',
+    fontSize: '13px',
+    marginTop: '7px'
   }
 
   return (
       <div style={style}>
-        <p style={nameStyle}>{props.name}</p>
-        <p style={priceStyle}>$ {props.price}</p>
+        <div style={container}>
+          <p style={nameStyle}>{props.name}</p>
+          <p style={priceStyle}>{props.price}</p>
+        </div>
         <p style={props.about ? paragraphStyle : {}}>{props.about}</p>
       </div>
   )

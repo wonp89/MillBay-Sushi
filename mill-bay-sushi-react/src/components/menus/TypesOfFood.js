@@ -16,6 +16,7 @@ const menuTypes =  (props) => {
         <div className={classes.overlay}>
           <a href="javascript:void(0)" className={classes.closebtn} onClick={props.click}>&times;</a>
           <div className={classes.overlayContent}>
+            <h1 id={classes.foodType}>{props.foodType}</h1>
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
               {foodNames()}
             </Animated>

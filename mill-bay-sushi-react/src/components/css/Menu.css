@@ -13,3 +13,13 @@
   margin-right: 10px;
   margin-left: 10px;
 }
+
+#scrollTop {
+    position: fixed;
+    width: 52.5%;
+    margin: 4% auto;
+    right: 0;
+    top: 0;
+    color:red;
+    cursor: pointer;
+}

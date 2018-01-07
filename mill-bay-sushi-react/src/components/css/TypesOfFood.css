@@ -12,11 +12,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#foodType {
+  color: black;
+  text-align: center;
+}
+
 .overlayContent {
     position: relative;
     top: 10%;
     width: 100%;
-    margin-top: 20px;
+    width: 65%;
+    margin:auto;
+    border: double 10px black;
+    background-color: white;
     margin-bottom: 50px;
 }
 

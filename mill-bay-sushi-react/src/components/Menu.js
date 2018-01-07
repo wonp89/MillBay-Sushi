@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TopIllustration from './menus/TopIllustration'
+import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
 import forest from './img/forest.png'
 import MenuPanels from './menus/MenuPanels';
@@ -43,11 +44,14 @@ class Menu extends Component {
 
       return (
         <div id="Menu">
+          <Scroll>
+            <div id={classes.scrollTop}>Go to Top</div>
+          </Scroll>
           <TopIllustration />
           <Intro />
-          <div  style={forestParallax} ></div>
+          <div  style={forestParallax}></div>
           <div id={classes.AllTypes} className="wow slideInLeft">
-              <h1 id={classes.menuHeading}>Menu</h1>
+              <h1 id={classes.menuHeading} className="menuHeading">Menu</h1>
               {this.state.menu.map( (list, index) =>
                  <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
               )}
@@ -56,7 +60,7 @@ class Menu extends Component {
           <div>
             {this.state.menu.map((types, index)  =>
               {if (types.show === true) {
-                  return <TypesOfFood key={index} types={types.food} click={() => this.showMenu(types.id)} />
+                  return <TypesOfFood foodType={types.name} key={index} types={types.food} click={() => this.showMenu(types.id)} />
               }}
             )}
           </div>
