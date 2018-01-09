@@ -106,7 +106,61 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 1, name: 'Baked Roll', show: false, food:
+      id: 1, name: 'Sashimi', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 2, name: 'Sushi Nigiri', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 3, name: 'Hoso Maki', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 4, name: 'Korean Food', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 5, name: 'Sushi Pizza', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 6, name: 'Dinner', show: false, food:
+      [
+        {
+          name: "tuna",
+          price: "9.95"
+        }
+      ]
+    },
+    {
+      id: 7, name: 'Lunch Special', show: false, food:
       [
         {
           name: "tuna",
@@ -196,61 +250,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 1, name: 'Baked Roll', show: false, food:
-      [
-        {
-          name: "tuna",
-          price: "9.95"
-        }
-      ]
-    },
-    {
-      id: 1, name: 'Baked Roll', show: false, food:
-      [
-        {
-          name: "tuna",
-          price: "9.95"
-        }
-      ]
-    },
-    {
-      id: 1, name: 'Baked Roll', show: false, food:
-      [
-        {
-          name: "tuna",
-          price: "9.95"
-        }
-      ]
-    },
-    {
-      id: 1, name: 'Baked Roll', show: false, food:
-      [
-        {
-          name: "tuna",
-          price: "9.95"
-        }
-      ]
-    },
-    {
-      id: 1, name: 'Baked Roll', show: false, food:
-      [
-        {
-          name: "tuna",
-          price: "9.95"
-        }
-      ]
-    },
-    {
-      id: 1, name: 'Baked Roll', show: false, food:
-      [
-        {
-          name: "tuna",
-          price: "9.95"
-        }
-      ]
-    },
-    {
-      id: 1, name: 'Baked Roll', show: false, food:
+      id: 17, name: 'Baked Roll', show: false, food:
       [
         {
           name: "tuna",

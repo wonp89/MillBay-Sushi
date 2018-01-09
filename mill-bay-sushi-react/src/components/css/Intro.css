@@ -13,6 +13,7 @@ img {
 #IntroContent {
   margin: 20px;
   justify-content: center;
+  float: left;
 }
 
 #kimbob {
@@ -21,14 +22,15 @@ img {
 }
 
 #paragraph {
-  border: solid;
-  color:black;
+  color: white;
   padding: 40px;
   width: 70%;
   margin: auto;
   display: flex;
-  /*align-content: flex-start;*/
-  justify-content: flex-start
+  justify-content: flex-start;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  line-height: 2;
 }
 
 #IntroImages {
@@ -39,11 +41,25 @@ img {
 }
 
 #scrollToMenu {
-  border: solid 3px #5162dd;
-  background-color:#596dff;
-  color:white;
+  border: solid 1px #3fabf2;
+  color: black;
   padding: 20px;
+  width: 150px;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 30px;
+  float:right;
 }
-#scrollToMenu:hover {
-  background-color: #4552b0;
+
+#scrollToMenuInsideDiv {
+  background-color: #3fabf2;
+  position: absolute;
+  padding: 10px;
+}
+
+#scrollToMenu:hover #scrollToMenuInsideDiv {
+  background-color: white;
+  position: absolute;
+  padding: 15px;
+  transition: 0.3s;
 }

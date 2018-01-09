@@ -6,7 +6,6 @@ const ocean = {
   backgroundImage: 'url(' + footerImage + ')',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  opacity: '0.8'
 };
 
 const Footer =  (props) => {

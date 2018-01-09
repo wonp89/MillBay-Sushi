@@ -10,7 +10,7 @@ class TopIllustration extends Component {
   render() {
     const style = {
       backgroundImage: 'url(' + hands + ')',
-      minHeight: '120px',
+      minHeight: '65vh',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'

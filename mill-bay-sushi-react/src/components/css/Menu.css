@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 50px;
-  margin-top: 50px;
+  padding: 30px;
+  margin-top: -21px;
+  background-color: #eeefea;
 }
 
 #menuHeading {
@@ -16,10 +17,19 @@
 
 #scrollTop {
     position: fixed;
-    width: 52.5%;
-    margin: 4% auto;
-    right: 0;
-    top: 0;
-    color:red;
+    color: black;
     cursor: pointer;
+    opacity: 0.5;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border-radius: 3px;
+    padding: 2px;
+    bottom:0;
+    z-index: 1;
+}
+
+#scrollTop:hover {
+  opacity: 1;
+  transition: 0.3s;
 }

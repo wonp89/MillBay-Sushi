@@ -20,6 +20,7 @@ class Menu extends Component {
       .then(menu => this.setState({ menu }));
   }
 
+//boolean for displaying menus
   showMenu = (id) => {
     const clickedMenu = {...this.state.menu[id]};
     const show = clickedMenu.show
@@ -29,8 +30,27 @@ class Menu extends Component {
     menus[id].show  === true ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
   }
 
-    render() {
+//pressing button goes to the next pages.
+  nextMenu = (id) => {
+    const menus = [...this.state.menu]
+    menus[id].show = false;
+    let nextPage = menus[id + 1]
+    if (nextPage === undefined) nextPage = menus[0]
+    nextPage.show = !nextPage.show
+    this.setState({menu: menus})
+  }
 
+//pressing button goes to the previous pages.
+  previousMenu = (id) => {
+    const menus = [...this.state.menu]
+    menus[id].show = false;
+    let nextPage = menus[id - 1]
+    if (nextPage === undefined) nextPage = menus[17]
+    nextPage.show = !nextPage.show
+    this.setState({menu: menus})
+  }
+
+    render() {
       const forestParallax = {
         backgroundImage: 'url(' + forest + ')',
         minHeight: '100px',
@@ -38,34 +58,34 @@ class Menu extends Component {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        height: '400px',
+        minHeight: '100vh',
         marginTop: '100px'
       }
 
       return (
-        <div id="Menu">
-          <Scroll>
-            <div id={classes.scrollTop}>Go to Top</div>
-          </Scroll>
-          <TopIllustration />
-          <Intro />
-          <div  style={forestParallax}></div>
-          <div id={classes.AllTypes} className="wow slideInLeft">
-              <h1 id={classes.menuHeading} className="menuHeading">Menu</h1>
-              {this.state.menu.map( (list, index) =>
-                 <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
+          <div id="Menu">
+            <Scroll>
+              <div id={classes.scrollTop}>Scroll Top ⇪</div>
+            </Scroll>
+            <TopIllustration />
+            <Intro />
+            <div  style={forestParallax}>  <h1>Heloo</h1></div>
+            <div id={classes.AllTypes} className="wow slideInUp">
+                <h1 id={classes.menuHeading} className="menuHeading">Menu</h1>
+                {this.state.menu.map( (list, index) =>
+                   <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
+                )}
+            </div>
+              <MenuImages />
+            <div>
+              {this.state.menu.map((types, index)  =>
+                {if (types.show === true) {
+                    return <TypesOfFood foodType={types.name} key={index} types={types.food} click={() => this.showMenu(types.id)} next={() => this.nextMenu(types.id)} previous={() => this.previousMenu(types.id)}/>
+                }}
               )}
+            </div>
+            <Footer />
           </div>
-          <MenuImages />
-          <div>
-            {this.state.menu.map((types, index)  =>
-              {if (types.show === true) {
-                  return <TypesOfFood foodType={types.name} key={index} types={types.food} click={() => this.showMenu(types.id)} />
-              }}
-            )}
-          </div>
-          <Footer />
-        </div>
       );
     }
 

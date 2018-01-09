@@ -1,0 +1,14 @@
+.parallaxImages1 {
+  width: 40vw;
+  margin-left: 0;
+}
+
+.parallaxImages2 {
+  width: 40vw;
+  margin-right: 0;
+}
+
+.parallaxImages1 div {
+  height: 100%;
+  width: 100%;
+}

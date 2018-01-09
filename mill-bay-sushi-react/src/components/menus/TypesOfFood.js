@@ -14,6 +14,8 @@ const menuTypes =  (props) => {
     return (
       <MuiThemeProvider>
         <div className={classes.overlay}>
+          <h1 id={classes.nextPage} onClick={props.next}>▻▻</h1>
+          <h1 id={classes.previousPage} onClick={props.previous}>◅◅</h1>
           <a href="javascript:void(0)" className={classes.closebtn} onClick={props.click}>&times;</a>
           <div className={classes.overlayContent}>
             <h1 id={classes.foodType}>{props.foodType}</h1>

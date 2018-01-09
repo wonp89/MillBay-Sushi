@@ -2,7 +2,6 @@ import React from 'react';
 
 const appetizers = (props) => {
   const style = {
-    borderBottom: 'dotted 1px black',
     width: '90%',
     margin: 'auto',
     color: 'black',
@@ -19,7 +18,6 @@ const appetizers = (props) => {
   const nameStyle = {
     color: 'black',
     display: 'inline-block',
-    width: '85%',
     marginBottom: '0'
   }
 
@@ -34,16 +32,23 @@ const appetizers = (props) => {
     color: '#919191',
     fontStyle: 'italic',
     fontSize: '13px',
-    marginTop: '7px'
+    marginTop: '7px',
+    marginBottom: '2px'
+  }
+
+  const LineForNameAndPrice = {
+    borderBottom: 'dotted 1px #c1c1c1',
+    flexGrow: '1'
   }
 
   return (
       <div style={style}>
         <div style={container}>
           <p style={nameStyle}>{props.name}</p>
+          <div style={LineForNameAndPrice}></div>
           <p style={priceStyle}>{props.price}</p>
         </div>
-        <p style={props.about ? paragraphStyle : {}}>{props.about}</p>
+        <p className='about' style={props.about ? paragraphStyle : {marginBottom: '-11px'}}>{props.about}</p>
       </div>
   )
 };
