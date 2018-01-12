@@ -14,7 +14,7 @@ class Intro extends Component {
   render() {
     return (
       <div id={classes.Intro}>
-        <img src={logo} className="wow slideInUp" />
+        <img id={classes.logo} src={logo} className="wow slideInUp" />
           <div id={classes.paragraph}>
               <div>
                 <h1 id={classes.IntroContent} className="wow fadeInLeft">Welcome to Mill Bay Sushi</h1>

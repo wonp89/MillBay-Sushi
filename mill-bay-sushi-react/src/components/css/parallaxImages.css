@@ -1,14 +1,33 @@
 .parallaxImages1 {
-  width: 40vw;
-  margin-left: 0;
+  flex-grow: 1;
+  height: 300px;
 }
 
 .parallaxImages2 {
-  width: 40vw;
-  margin-right: 0;
+  flex-grow: 1;
+  height: 300px;
 }
 
 .parallaxImages1 div {
   height: 100%;
   width: 100%;
+}
+
+.parallaxImages2 div {
+  height: 100%;
+  width: 100%;
+}
+
+#parallaxImages1Content {
+  border: solid 10px #52d392;
+}
+
+#parallaxImages2Content {
+  border: solid 10px #4b8d6c;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 615px) {
+  .parallaxImages1 {width: 100vw}
+  .parallaxImages2 {width: 100vw}
 }

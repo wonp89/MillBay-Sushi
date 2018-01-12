@@ -1,18 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 import classes from '../../css/Footer.css'
 import footerImage from '../../img/footerImage.png'
+import waterSplash from '../../img/waterSplash.png'
+import WOW from 'wowjs';
 
-const ocean = {
-  backgroundImage: 'url(' + footerImage + ')',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-};
-
-const Footer =  (props) => {
+class Footer extends Component {
+  componentDidMount() {
+    new WOW.WOW().init();
+  }
+  render() {
     return (
-        <div style={ocean} id={classes.footer}>
-        </div>
+      <div>
+        <img src={footerImage} id={classes.contactFooterImage} style={{width: '100%'}}/>
+        <img src={waterSplash} className="wow fadeInDown" id={classes.waterSplash} />
+      </div>
     )
   }
+}
 
 export default Footer;

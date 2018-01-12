@@ -13,7 +13,8 @@ class TopIllustration extends Component {
       minHeight: '65vh',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover'
+      backgroundSize: 'cover',
+      borderBottom: 'solid #333333'
     };
 
     return (

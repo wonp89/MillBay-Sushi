@@ -14,7 +14,7 @@ import Contact from './Contact';
 class App extends Component {
   state = {
           navItems: [
-                      {name: 'Home', to: '/', style: {backgroundColor: 'black'}},
+                      {name: 'Home', to: '/' },
                       {name: 'Contact', to: '/contact'}
                     ]
           }

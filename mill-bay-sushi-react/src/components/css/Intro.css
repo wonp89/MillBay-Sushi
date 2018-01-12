@@ -4,10 +4,13 @@
   text-align: center;
 }
 
-img {
+#logo {
   width: 320px;
   margin-top: 50px;
   margin-bottom: 30px;
+  padding: 40px;
+  border-radius: 100%;
+  background-color: white;
 }
 
 #IntroContent {
@@ -60,6 +63,6 @@ img {
 #scrollToMenu:hover #scrollToMenuInsideDiv {
   background-color: white;
   position: absolute;
-  padding: 15px;
+  padding: 20px 40px;
   transition: 0.3s;
 }

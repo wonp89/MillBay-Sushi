@@ -5,10 +5,11 @@ import Intro from './Intro';
 import forest from './img/forest.png'
 import MenuPanels from './menus/MenuPanels';
 import MenuImages from './menus/menuImages/MenuImages';
-import Footer from './menus/footer/Footer';
+import Footer2 from './menus/footer/Footer2';
 import TypesOfFood from './menus/TypesOfFood'
+import Ocean from './menus/Ocean'
 import classes from './css/Menu.css';
-import {Link} from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import WOW from 'wowjs';
 
 class Menu extends Component {
@@ -53,12 +54,11 @@ class Menu extends Component {
     render() {
       const forestParallax = {
         backgroundImage: 'url(' + forest + ')',
-        minHeight: '100px',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        minHeight: '100vh',
+        minHeight: '80vh',
         marginTop: '100px'
       }
 
@@ -70,13 +70,13 @@ class Menu extends Component {
             <TopIllustration />
             <Intro />
             <div  style={forestParallax}>  <h1>Heloo</h1></div>
-            <div id={classes.AllTypes} className="wow slideInUp">
+            <div id={classes.AllTypes}>
                 <h1 id={classes.menuHeading} className="menuHeading">Menu</h1>
                 {this.state.menu.map( (list, index) =>
                    <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
                 )}
             </div>
-              <MenuImages />
+              <MenuImages className='wow fadeIn'/>
             <div>
               {this.state.menu.map((types, index)  =>
                 {if (types.show === true) {
@@ -84,7 +84,11 @@ class Menu extends Component {
                 }}
               )}
             </div>
-            <Footer />
+            {/* <Footer /> */}
+            <ParallaxProvider>
+              <Footer2 />
+            </ParallaxProvider>
+            <Ocean />
           </div>
       );
     }

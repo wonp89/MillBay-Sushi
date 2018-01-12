@@ -1,24 +1,25 @@
-import React from 'react';
-import ParallaxImage1 from '../../../img/menuImages1.png'
+import React, {Component} from 'react';
 import classes from '../../../css/parallaxImages.css'
 import { Parallax } from 'react-scroll-parallax';
+import WOW from 'wowjs';
 
-const parallaxImages1 =  (props) => {
-
+class parallaxImages1 extends Component {
+  componentDidMount() {
+    new WOW.WOW().init();
+  }
+  render() {
     return (
           <Parallax
             className={classes.parallaxImages1}
-            // disabled='false'
-            // offsetXMax={-40}
-            // offsetXMin={20}
-            offsetYMax={-40}
-            offsetYMin={20}
-            slowerScrollRate
+            offsetYMax={-80}
+            offsetYMin={0}
+            fasterScrollRate
             tag="figure"
             >
-            <img style={{width: '100%', flexGrow: '1'}} src={ParallaxImage1} />
+            <div id={classes.parallaxImages1Content} className="wow rotateInDownLeft"><h1>Content1</h1></div>
           </Parallax>
     )
   }
+}
 
 export default parallaxImages1;
