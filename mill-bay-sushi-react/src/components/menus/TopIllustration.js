@@ -14,7 +14,7 @@ class TopIllustration extends Component {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      borderBottom: 'solid #333333'
+      borderBottom: 'solid white'
     };
 
     return (

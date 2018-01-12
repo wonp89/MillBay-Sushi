@@ -18,7 +18,7 @@ ul.topnav li a {
     padding:10px;
     text-decoration: none;
     border-top: solid 3px black;
-    border-bottom: solid 3px #333333;
+    border-bottom: solid 3px white;
 }
 
 ul.topnav li a:hover:not(.active) {

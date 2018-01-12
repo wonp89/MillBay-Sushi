@@ -58,8 +58,11 @@ class Menu extends Component {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        minHeight: '80vh',
-        marginTop: '100px'
+        minHeight: '100vh',
+        marginTop: '100px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }
 
       return (
@@ -69,9 +72,15 @@ class Menu extends Component {
             </Scroll>
             <TopIllustration />
             <Intro />
-            <div  style={forestParallax}>  <h1>Heloo</h1></div>
+            <div  style={forestParallax}>
+              <h1>Heloo</h1>
+            </div>
             <div id={classes.AllTypes}>
-                <h1 id={classes.menuHeading} className="menuHeading">Menu</h1>
+                <div id={classes.menuHeading} className="wow flipInX">
+                  <h1 id={classes.menuHeadingInside}>
+                    MENU
+                  </h1>
+                </div>
                 {this.state.menu.map( (list, index) =>
                    <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
                 )}

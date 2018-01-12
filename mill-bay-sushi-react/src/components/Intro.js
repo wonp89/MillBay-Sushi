@@ -26,7 +26,7 @@ class Intro extends Component {
                 </div>
                 <p style={{color: 'white', animationDelay: '0.7s'}} className="wow fadeIn">Mill bay Sushi is located in Victoria, Mill bay. This is the place that anyone can enjoy sushi. the best sushi restaurant in Mill bay. We love you. Wow, I can't believe it. Baldfasdfjaosidjoif. Mill bay Sushi is located in Victoria, Mill bay. This is the place that anyone can enjoy sushi. the best sushi restaurant in Mill bay. We love you. Wow, I can't believe it. Baldfasdfjaosidjoif
                 </p>
-                <Scroll type="class" element="menuHeading">
+                <Scroll type="id" element="Menu__menuHeading__fbviy">
                   <div id={classes.scrollToMenu} className="wow fadeInRight"><div id={classes.scrollToMenuInsideDiv}>GO TO MENU</div></div>
                 </Scroll>
               </div>
