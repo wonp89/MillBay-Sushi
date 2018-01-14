@@ -3,6 +3,7 @@ import TopIllustration from './menus/TopIllustration'
 import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
 import forest from './img/forest.png'
+import menuPlateImage from './img/menuPlate.png'
 import MenuPanels from './menus/MenuPanels';
 import MenuImages from './menus/menuImages/MenuImages';
 import Footer2 from './menus/footer/Footer2';
@@ -62,7 +63,12 @@ class Menu extends Component {
         marginTop: '100px',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderTop: "solid 4px white"
+      }
+
+      const menuPlate = {
+        backgroundImage: 'url(' + menuPlateImage + ')',
       }
 
       return (
@@ -75,17 +81,20 @@ class Menu extends Component {
             <div  style={forestParallax}>
               <h1>Heloo</h1>
             </div>
+            <div id={classes.menuCurtain}></div>
             <div id={classes.AllTypes}>
-                <div id={classes.menuHeading} className="wow flipInX">
-                  <h1 id={classes.menuHeadingInside}>
-                    MENU
-                  </h1>
+                <div id={classes.menuHeading} style={menuPlate} className="wow slideInLeft">
+                  <h1>MENU</h1>
                 </div>
                 {this.state.menu.map( (list, index) =>
                    <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
                 )}
             </div>
-              <MenuImages className='wow fadeIn'/>
+            <div id={classes.menuContent}>
+              <h1 style={{marginTop: '0'}}>Content about Menu</h1>
+              <p style={{marginBottom: '0'}}>Amazing Experience</p>
+            </div>
+            <MenuImages className='wow fadeIn'/>
             <div>
               {this.state.menu.map((types, index)  =>
                 {if (types.show === true) {
@@ -93,7 +102,6 @@ class Menu extends Component {
                 }}
               )}
             </div>
-            {/* <Footer /> */}
             <ParallaxProvider>
               <Footer2 />
             </ParallaxProvider>

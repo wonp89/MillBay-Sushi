@@ -1,9 +1,27 @@
 #contactHeading {
   color: red;
-  text-align: center;
   margin: 0;
   color: white;
   height: 300px;
   padding-top: 20px;
   background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contactHeadingContent {
+  margin: auto;
+}
+
+#phoneImage {
+  margin-right: -100px;
+}
+
+span {
+  color: #62d9fa;
+}
+
+@media screen and (max-width:650px) {
+  #contactHeading {text-align: center;}
+  #phoneImage {display: none;}
 }

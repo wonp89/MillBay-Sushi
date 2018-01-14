@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import classes from '../../css/Ocean.css'
 import ParallaxImage2 from '../../img/menuImages2.png'
+import submarineImage from '../../img/submarine.png'
+import whaleImage from '../../img/whale.png'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {GridList, GridTile} from 'material-ui/GridList';
 import WOW from 'wowjs';
@@ -37,8 +39,15 @@ class OceanImages extends Component {
     return (
       <MuiThemeProvider>
         <div>
-          <h1 id={classes.oceanHeading} className="wow flash">G A L L E R I E S ►</h1>
-          <div id={classes.OceanImagesContainer} className="wow fadeInUp">
+          <h1 id={classes.oceanHeading} className="wow fadeIn">G A L L E R I E S ►</h1>
+          <div className="wow flash">
+            <div id={classes.submarineContainer}>
+              <img id={classes.submarine} src={submarineImage} alt="" />
+              <div id={classes.oceanLight}></div>
+            </div>
+            <img src={whaleImage} id={classes.whale} />
+          </div>
+          <div id={classes.OceanImagesContainer} className="wow fadeIn">
             <GridList
               cellHeight={300}
               cols={2}

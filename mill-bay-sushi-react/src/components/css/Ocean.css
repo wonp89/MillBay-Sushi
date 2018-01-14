@@ -4,6 +4,16 @@
   background-color: #061f24;
 }
 
+#submarineContainer {
+  display: flex;
+  margin-left: 20vw;
+  margin-bottom: 10vh;
+}
+
+#submarine {
+  opacity: 0.9;
+}
+
 #oceanHeading {
   color: #7bc8f8;
   text-align: right;
@@ -11,7 +21,23 @@
   transform: rotate(-90deg);
   margin-bottom: 10vw;
   transform: rotate(90deg);
-  transform-origin: right top 0
+  transform-origin: right top 0;
+}
+
+#oceanLight{
+  opacity: 0.7;
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 260px;
+  width: 30px;
+  height: 30px;
+  background-color: #e6e6be;
+  border-radius: 50%;
+  box-shadow: 0px 0px 260px 75px #ffffff;
+}
+
+#whale {
+  margin-left: 30vw;
 }
 
 /*---- OceanImages.css -------*/
@@ -21,4 +47,12 @@
   justify-content: space-around;
   width: 85%;
   margin: auto;
+  padding-bottom: 20vh;
+}
+
+@media screen and (max-width: 600px) {
+  #submarineContainer {margin-left: 4vw;}
+  #submarine {width: 150px; height: 61px;}
+  #oceanLight {margin-top: 0; margin-left: 100px;box-shadow: 0px 0px 130px 45px #ffffff; width: 15px; height: 15px;}
+  #whale {width: 800px;}
 }
