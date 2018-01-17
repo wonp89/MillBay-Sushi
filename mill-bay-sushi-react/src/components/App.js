@@ -21,7 +21,6 @@ class App extends Component {
 
   selectedNavItem(navItem) {
     this.setState({ active: navItem });
-    console.log(this)
   }
 
   render() {

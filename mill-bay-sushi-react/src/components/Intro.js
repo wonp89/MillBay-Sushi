@@ -14,7 +14,7 @@ class Intro extends Component {
   render() {
     return (
       <div id={classes.Intro}>
-        <img id={classes.logo} src={logo} className="wow slideInUp" />
+        <img id={classes.logo} src={logo} />
           <div id={classes.paragraph}>
               <div>
                 <h1 id={classes.IntroContent} className="wow fadeInLeft">Welcome to Mill Bay Sushi</h1>
@@ -26,7 +26,7 @@ class Intro extends Component {
                 </div>
                 <p style={{color: 'white', animationDelay: '0.7s'}} className="wow fadeIn">Mill bay Sushi is located in Victoria, Mill bay. This is the place that anyone can enjoy sushi. the best sushi restaurant in Mill bay. We love you. Wow, I can't believe it. Baldfasdfjaosidjoif. Mill bay Sushi is located in Victoria, Mill bay. This is the place that anyone can enjoy sushi. the best sushi restaurant in Mill bay. We love you. Wow, I can't believe it. Baldfasdfjaosidjoif
                 </p>
-                <Scroll type="id" element="Menu__menuHeading__fbviy">
+                <Scroll type="id" element="Menu__AllTypes__2S_3b">
                   <div id={classes.scrollToMenu} className="wow fadeInRight"><div id={classes.scrollToMenuInsideDiv}>GO TO MENU</div></div>
                 </Scroll>
               </div>

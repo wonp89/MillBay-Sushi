@@ -5,6 +5,7 @@ import submarineImage from '../../img/submarine.png'
 import whaleImage from '../../img/whale.png'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {GridList, GridTile} from 'material-ui/GridList';
+import { Parallax } from 'react-scroll-parallax';
 import WOW from 'wowjs';
 
 class OceanImages extends Component {
@@ -45,7 +46,15 @@ class OceanImages extends Component {
               <img id={classes.submarine} src={submarineImage} alt="" />
               <div id={classes.oceanLight}></div>
             </div>
-            <img src={whaleImage} id={classes.whale} />
+            <Parallax
+              className={classes.parallaxImages1}
+              offsetXMax={50}
+              offsetXMin={-20}
+              slowerScrollRate
+              tag="figure"
+              >
+                <img src={whaleImage} id={classes.whale} />
+            </Parallax>
           </div>
           <div id={classes.OceanImagesContainer} className="wow fadeIn">
             <GridList
