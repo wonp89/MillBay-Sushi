@@ -16,7 +16,7 @@ class parallaxImages1 extends Component {
             fasterScrollRate
             tag="figure"
             >
-            <div id={classes.parallaxImages1Content} className="wow rotateInDownLeft"><h1> 「Content1」</h1></div>
+            <div id={classes.parallaxImages1Content} className="wow rotateInDownLeft"><h1> 「Business Hour 11:30am ~ 9:00pm, 7 Days」</h1></div>
           </Parallax>
     )
   }

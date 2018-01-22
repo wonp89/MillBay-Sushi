@@ -9,13 +9,23 @@
 }
 
 .parallaxImages1 div {
+  text-align: center;
   height: 100%;
-  width: 100%;
+  width: 40vw;
 }
 
 .parallaxImages2 div {
+  text-align: center;
   height: 100%;
-  width: 100%;
+  width: 40vw;
+}
+
+.parallaxImages1 div h1 {
+  margin: 30px;
+}
+
+.parallaxImages2 div h1 {
+  margin: 30px;
 }
 
 #parallaxImages1Content {
@@ -36,4 +46,9 @@
 @media screen and (max-width: 615px) {
   .parallaxImages1 {width: 100vw}
   .parallaxImages2 {width: 100vw}
+}
+
+@media screen and (max-width: 875px) {
+  .parallaxImages1 div {width: 100%}
+  .parallaxImages2 div {width: 100%}
 }

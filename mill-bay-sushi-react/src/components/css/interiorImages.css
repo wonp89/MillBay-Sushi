@@ -1,0 +1,13 @@
+.imgsSmall {
+  cursor: pointer;
+}
+
+.largeImgs {
+  width: 70%;
+  margin-top: 30px;
+  padding-bottom:30px;
+}
+
+@media screen and (max-width: 760px) {
+  .largeImgs {width: 100%}
+}

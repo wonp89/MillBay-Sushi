@@ -1,10 +1,9 @@
-#homeHeading {
-  color: red;
-  text-align: center;
-  margin: 0;
+#topImage {
+  transition: 0.4s;
   background-color: black;
-  color: white;
-  height: 500px;
-  display: flex;
-  flex-direction: row;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: solid 1px white;
 }

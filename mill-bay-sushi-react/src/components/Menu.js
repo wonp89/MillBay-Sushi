@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import TopIllustration from './menus/TopIllustration'
 import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
-import forest from './img/forest.png'
-import menuPlateImage from './img/menuPlate.png'
+import middleImg from './img/middleImage.png'
 import pwPatternImage from './img/pw_pattern.png'
 import togoMenuImage from './img/togoMenuImage.png'
 import togoMenu from './img/MillBaySushi-TogoMenu.pdf'
@@ -14,7 +13,6 @@ import TypesOfFood from './menus/TypesOfFood'
 import Ocean from './menus/Ocean'
 import classes from './css/Menu.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import {Animated} from "react-animated-css";
 import WOW from 'wowjs';
 
 class Menu extends Component {
@@ -44,6 +42,9 @@ class Menu extends Component {
     if (nextPage === undefined) nextPage = menus[0]
     nextPage.show = !nextPage.show
     this.setState({menu: menus})
+    if(id.key == 'Enter'){
+      console.log('enter press here! ')
+    }
   }
 
 //pressing button goes to the previous pages.
@@ -57,35 +58,31 @@ class Menu extends Component {
   }
 
     render() {
-      const forestParallax = {
-        backgroundImage: 'url(' + forest + ')',
+      const middleImage = {
+        backgroundImage: 'url(' + middleImg + ')',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         minHeight: '100vh',
-        marginTop: '100px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        borderTop: "solid 4px white",
         borderBottom: "solid 10px #dbdbdb"
       }
 
       return (
           <div id="Menu">
-            <Animated animationIn="flash" animationOut="fadeOut" isVisible={true}>
             <Scroll>
-              <div id={classes.scrollTop}>Scroll Top ⇪</div>
+              <div id={classes.scrollTop}>⇪</div>
             </Scroll>
-          </Animated>
             <TopIllustration />
             <Intro />
-            <div  style={forestParallax}>
-              <h1>Heloo</h1>
+            <div  style={middleImage}>
+              <h1 id={classes.overlaidText}>MILL BAY + SUSHI = ♡</h1>
             </div>
             <div id={classes.AllTypes} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
-                <div id={classes.menuHeading} style={{backgroundImage: 'url(' + menuPlateImage + ')'}} className="wow slideInLeft">
+                <div id={classes.menuHeading} className="wow slideInLeft">
                   <h1>MENU</h1>
                 </div>
                 {this.state.menu.map( (list, index) =>
@@ -102,7 +99,7 @@ class Menu extends Component {
             <div>
               {this.state.menu.map((types, index)  =>
                 {if (types.show === true) {
-                    return <TypesOfFood foodType={types.name} key={index} types={types.food} click={() => this.showMenu(types.id)} next={() => this.nextMenu(types.id)} previous={() => this.previousMenu(types.id)}/>
+                    return <TypesOfFood foodType={types.name} key={index} types={types.food} click={() => this.showMenu(types.id)} next={() => this.nextMenu(types.id)} previous={() => this.previousMenu(types.id)} />
                 }}
               )}
             </div>

@@ -56,22 +56,24 @@ class OceanImages extends Component {
                 <img src={whaleImage} id={classes.whale} />
             </Parallax>
           </div>
-          <div id={classes.OceanImagesContainer} className="wow fadeIn">
-            <GridList
-              cellHeight={300}
-              cols={2}
-            >
-              {imgeList.map((tile) => (
-              <GridTile
-                key={tile.img}
-                title={tile.title}
-                subtitle={<span>Price <b>{tile.price}</b></span>}
-              >
-                <img src={tile.img} alt="" />
-              </GridTile>
-            ))}
-           </GridList>
-          </div>
+            <div id={classes.OceanImagesOuterContainer}>
+                <div id={classes.OceanImagesContainer} className="wow fadeIn">
+                  <GridList
+                    cellHeight={400}
+                    cols={2}
+                  >
+                    {imgeList.map((tile) => (
+                    <GridTile
+                      key={tile.img}
+                      title={tile.title}
+                      subtitle={<span>Price <b>{tile.price}</b></span>}
+                    >
+                      <img src={tile.img} alt="" />
+                    </GridTile>
+                  ))}
+                 </GridList>
+                </div>
+            </div>
         </div>
       </MuiThemeProvider>
     )

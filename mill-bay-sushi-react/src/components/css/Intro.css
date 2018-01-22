@@ -1,7 +1,7 @@
 #Intro{
-  margin: 20px;
-  margin-top: 20px;
   text-align: center;
+  background-color: #0e0e0e;
+  padding-top: 80px;
 }
 
 #logo {
@@ -37,9 +37,8 @@
 }
 
 #IntroImages {
-  height:500px;
   width:100%;
-  background-color: grey;
+  background-color: black;
   margin-top: 100px;
 }
 
@@ -70,4 +69,8 @@
   position: absolute;
   padding: 20px 40px;
   transition: 0.3s;
+}
+
+@media screen and (max-width:450px) {
+  #logo { width: 260px;}
 }

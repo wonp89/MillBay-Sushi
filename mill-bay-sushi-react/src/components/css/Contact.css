@@ -2,26 +2,84 @@
   color: red;
   margin: 0;
   color: white;
-  height: 300px;
+  height: 350px;
   padding-top: 20px;
-  background-color: #061f24;
+  background-color: #0e0e0e;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+#emptyDiv {
+  flex-grow:.2;
 }
 
 #contactHeadingContent {
-  margin: auto;
+  flex-grow: .1;
+  padding: 22px;
+  margin-bottom: 30px;
+}
+
+#contactHeadingContent p, h1 {
+  margin-left: 30px;
+}
+
+#phoneNumber {
+  text-decoration: none;
+  color: white;
+}
+
+#contactForm {
+  flex-grow: .5;
+  align-self: center;
 }
 
 #phoneImage {
   margin-right: -100px;
 }
 
+.formField {
+  margin-bottom: 5px;
+}
+
+.formField div {
+  margin-bottom: 5px;
+}
+
 span {
   color: #62d9fa;
 }
 
+/* map */
+#mapContainerElement {
+  height: 45vw;
+  width: 45vw;
+  float: right;
+  margin-right: 10vw;
+  margin-top: -400px;
+  margin-bottom: 50px;
+}
+
+#mapLoadingElement {
+  height: 100%;
+}
+
+#mapElement {
+  height: 100%;
+  border-radius: 100%;
+  border: solid white 20px;
+}
+
 @media screen and (max-width:650px) {
-  #contactHeading {text-align: center;}
+  #contactHeading {text-align: center; display: block; height: 300px;}
+  #contactHeadingContent {border: none !important;}
   #phoneImage {display: none;}
+  #contactForm {display: none;}
+}
+
+@media screen and (max-width: 1000px) {
+  #mapContainerElement {margin-top:-300px}
+}
+
+@media screen and (max-width: 500px) {
+  #mapContainerElement {margin-top:-100px;}
 }
