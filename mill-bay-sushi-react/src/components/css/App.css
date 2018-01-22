@@ -18,16 +18,17 @@ ul.topnav li a {
     padding:10px;
     text-decoration: none;
     border-top: solid 3px black;
-    border-bottom: solid 3px white;
+    border-bottom: solid 1px white;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 ul.topnav li a:hover:not(.active) {
-    border-bottom: solid 3px #d11f1f;
+    border-bottom: solid 1px #d11f1f;
     transition: 0.3s;
 }
 
 ul.topnav li a.active {
-    border-bottom: solid 3px #d11f1f;
+    border-bottom: solid 1px #d11f1f;
 }
 
 @media screen and (max-width: 600px){

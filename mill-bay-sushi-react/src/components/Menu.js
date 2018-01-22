@@ -64,7 +64,7 @@ class Menu extends Component {
             <TopSlideImages />
             <Intro />
             <div  style={{backgroundImage: 'url(' + middleImg + ')'}} id={classes.sashimiMiddleImage}>
-              <h1 id={classes.overlaidText}>MILL BAY + SUSHI = ♡</h1>
+              <h1 id={classes.overlaidText}>Discover the taste of SUSHI</h1>
             </div>
             <div id={classes.AllTypes} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
                 <div id={classes.menuHeading} className="wow slideInLeft">
@@ -78,7 +78,7 @@ class Menu extends Component {
               <a href={togoMenu} style={{marginBottom: '0'}} target="_blank">
                 <img style={{width: '100px'}} src={togoMenuImage} alt="" />
               </a>
-              <h3 style={{marginTop: '0'}}>Take Out Menu PDF</h3>
+              <h3>Take Out Menu PDF</h3>
             </div>
             <Hours className='wow fadeIn'/>
             <div>

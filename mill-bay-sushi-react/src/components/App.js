@@ -29,8 +29,8 @@ class App extends Component {
       <div className="App">
         <nav>
           <ul className={classes.topnav}>
-            {this.state.navItems.map(navItem =>
-             <li><Link
+            {this.state.navItems.map((navItem, index) =>
+             <li key={index}><Link             
              to={navItem.to}
             //  style={this.state.active === undefined ? navItem.style : {}}
              className={this.state.active === navItem ? classes.active : {}}

@@ -33,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #lunchHoursContent {
@@ -41,6 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 @media screen and (max-width: 615px) {

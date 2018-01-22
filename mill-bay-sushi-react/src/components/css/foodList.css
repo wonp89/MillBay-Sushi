@@ -1,0 +1,37 @@
+#listStyle {
+  width: 90%;
+  margin: auto;
+  color: black;
+  background-color: white;
+  margin-top: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#category {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+#nameStyle {
+  color: black;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#LineForNameAndPrice {
+  border-bottom: dotted 1px #c1c1c1;
+  flex-grow: 1;
+}
+
+#priceStyle {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 20px;
+  color: black;
+}

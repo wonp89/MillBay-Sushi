@@ -11,9 +11,9 @@ class parallaxImages2 extends Component {
     return (
           <Parallax
             className={classes.lunchHours}
-            offsetYMax={-80}
-            offsetYMin={0}
-            fasterScrollRate
+            offsetYMax={0}
+            offsetYMin={-80}
+            slowerScrollRate
             tag="figure"
             >
             <div id={classes.lunchHoursContent} className="wow rotateInDownRight"><h1>「Lunch Hour 11:00am ~ 2:30pm」</h1></div>

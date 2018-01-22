@@ -45,14 +45,26 @@
 }
 
 #overlaidText {
-  color: white;
+  color: black;
   font-size: 50px;
+  background-color: white;
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 8px;
+  box-shadow: 5px 5px #c7c7c7;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 #menuContent {
   text-align: center;
   background-color: #eff0eb;
   padding-bottom: 150px;
+}
+
+#menuContent > h3 {
+  font-family: 'Cabin Sketch', cursive;
+  margin-top:0;
 }
 
 #scrollTop {

@@ -383,6 +383,9 @@ router.get('/menu', function(req, res, next) {
       id: 5, name: 'Sushi Pizza & Temaki', show: false, food:
       [
         {
+          category: "Sushi Pizza"
+        },
+        {
           name: "Vegetable Sushi Pizza",
           price: "$11.50",
           about: "Sliced avocado, salad, deep fried sushi rice, spicy mayo, sushi sauce, ponzu sauce, salad sauce, wasabi sauce"
@@ -391,6 +394,9 @@ router.get('/menu', function(req, res, next) {
           name: "Sushi Pizza",
           price: "$12.50",
           about: "Spicy salmon, salad, deep fried sushi rice, spicy mayo, sushi sauce, ponzu sauce, spicy sauce, salad sauce, wasabi sauce"
+        },
+        {
+          category: "Temaki (Cone)"
         },
         {
           name: "California Cone",
@@ -419,8 +425,11 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 6, name: 'Lunch Special', show: false, food:
+      id: 6, name: 'Lunch / Dinner', show: false, food:
       [
+        {
+          category: "Lunch"
+        },
         {
           name: "Vegetable Roll Combo (Vegetarian)",
           price: "$10.95"
@@ -459,12 +468,10 @@ router.get('/menu', function(req, res, next) {
         },
         {
           about: "• Lunch Hour 11:30am - 2:30pm / All served with miso soup, appy tempura, green salad, fresh fruit & California roll • "
-        }
-      ]
-    },
-    {
-      id: 7, name: 'Dinner', show: false, food:
-      [
+        },
+        {
+          category: "Dinner"
+        },
         {
           name: "Chicken Teriyaki Dinner",
           price: "$19.90",
@@ -488,7 +495,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 8, name: 'Fresh Fish Roll', show: false, food:
+      id: 7, name: 'Fresh Fish Roll', show: false, food:
       [
         {
           name: "California Roll",
@@ -565,7 +572,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 9, name: 'Baked Roll', show: false, food:
+      id: 8, name: 'Baked Roll', show: false, food:
       [
         {
           name: "B.C Roll",
@@ -612,7 +619,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 10, name: 'Tempura Roll', show: false, food:
+      id: 9, name: 'Tempura Roll', show: false, food:
       [
         {
           name: "Yam Roll",
@@ -666,7 +673,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 11, name: 'Special Roll', show: false, food:
+      id: 10, name: 'Special Roll', show: false, food:
       [
         {
           name: "Butterfly Roll",
@@ -731,7 +738,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 12, name: 'Vegetable Roll', show: false, food:
+      id: 11, name: 'Vegetable Roll', show: false, food:
       [
         {
           name: "Avo Cucumber Roll",
@@ -756,7 +763,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 13, name: 'Noodle', show: false, food:
+      id: 12, name: 'Noodle', show: false, food:
       [
         {
           name: "Vegetable Udon",
@@ -806,7 +813,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 14, name: 'Tempura', show: false, food:
+      id: 13, name: 'Tempura', show: false, food:
       [
         {
           name: "Appy Tempura (4pcs)",
@@ -844,7 +851,7 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 15, name: 'DON / KATSU / TERIYAKI', show: false, food:
+      id: 14, name: 'DON / KATSU / TERIYAKI', show: false, food:
       [
         {
           name: "Tofu Teriyaki",
@@ -901,8 +908,11 @@ router.get('/menu', function(req, res, next) {
       ]
     },
     {
-      id: 16, name: 'Roll Combo & Platter', show: false, food:
+      id: 15, name: 'Roll Combo & Platter', show: false, food:
       [
+        {
+          category: "Roll Combo"
+        },
         {
           name: "4 pcs Sushi & California Roll",
           price: "$12.90",
@@ -917,6 +927,29 @@ router.get('/menu', function(req, res, next) {
           name: "4 pcs Sushi & Dynamite Roll",
           price: "$14.90",
           about: "salmon, tuna, red snapper, steamed prawn"
+        },
+        {
+          name: "Vegetable Roll Special (4 rolls)",
+          price: "$16.25",
+          about: "Cucumber roll, avocado roll, vegetable roll, yam roll"
+        },
+        {
+          name: "Roll Combo Special (4 rolls)",
+          price: "$22.50",
+          about: "California roll, dynamite roll, yam roll, spicy tuna roll"
+        },
+        {
+          name: "Mill Bay Roll Special (6 rolls)",
+          price: "$32.50",
+          about: "California roll, calamari tempura roll, yam roll, cucumber roll, BC roll, Spicy tuna roll"
+        },
+        {
+          name: "Nigiri Combo (8pcs)",
+          price: "$18",
+          about: "3pcs salmon, 3pcs tuna, 2pcs ebi"
+        },
+        {
+          category: "Platter"
         },
         {
           name: "Love Platter",
@@ -943,25 +976,98 @@ router.get('/menu', function(req, res, next) {
           price: "$115",
           about: "Monkey brain, 20pcs sashimi, 12pcs sushi, alaska roll, hawaii roll, kamikaze tuna roll, dragon roll, caterpillar roll"
         },
+      ]
+    },
+    {
+      id: 16, name: 'Drink', show: false, food:
+      [
         {
-          name: "Vegetable Roll Special (4 rolls)",
-          price: "$16.25",
-          about: "Cucumber roll, avocado roll, vegetable roll, yam roll"
+          category: 'Beverages'
         },
         {
-          name: "Roll Combo Special (4 rolls)",
-          price: "$22.50",
-          about: "California roll, dynamite roll, yam roll, spicy tuna roll"
+          name: "Soft Drinks",
+          price: "$1.95",
+          about: "Coke, diet coke, ginger ale, iced tea, root beer, sprite, soda water"
         },
         {
-          name: "Mill Bay Roll Special (6 rolls)",
-          price: "$32.50",
-          about: "California roll, calamari tempura roll, yam roll, cucumber roll, BC roll, Spicy tuna roll"
+          name: "Juice",
+          price: "$2.25",
+          about: "Orange and apple"
         },
         {
-          name: "Nigiri Combo (8pcs)",
-          price: "$18",
-          about: "3pcs salmon, 3pcs tuna, 2pcs ebi"
+          name: "Japanese Juice",
+          price: "$3.50",
+          about: "Melon and strawberry"
+        },
+        {
+          category: "Beers"
+        },
+        {
+          name: "Domestic",
+          price: "$4.50",
+          about: "Kokanee, Canadian, Budweiser, Coors Light, Piper's Pale Ale"
+        },
+        {
+          name: "Imported (small)",
+          price: "$4.50",
+          about: "Sapporo, Asahi, Kirin"
+        },
+        {
+          name: "Imported (large)",
+          price: "$9.95",
+          about: "Sapporo, Asahi, Kirin"
+        },
+        {
+          name: "Draught Beer",
+          price: "$5.95",
+          about: "Sapporo (Pint)"
+        },
+        {
+          name: "Draught Beer",
+          price: "$15.95",
+          about: "Sapporo (Pitcher)"
+        },
+        {
+          category: "Sake"
+        },
+        {
+          name: "Cold sake",
+          price: "$18.95"
+        },
+        {
+          name: "Hot sake (small)",
+          price: "$4.95"
+        },
+        {
+          name: "Hot sake (large)",
+          price: "$8.95"
+        },
+        {
+          name: "Soju (소주)",
+          price: "$14.95"
+        },
+        {
+          name: "Bokbunja (복분자)",
+          price: "$18.95"
+        },
+        {
+          name: "Seoljungmae (설중매)",
+          price: "$18.95"
+        },
+        {
+          category: "Wine"
+        },
+        {
+          name: "White / Red (glass)",
+          price: "$4.90"
+        },
+        {
+          name: "White / Red (1/2L)",
+          price: "$12.90"
+        },
+        {
+          name: "White / Red (1L)",
+          price: "$19.90"
         }
       ]
     }

@@ -26,6 +26,7 @@
 #phoneNumber {
   text-decoration: none;
   color: white;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #contactForm {
@@ -67,6 +68,14 @@ span {
   height: 100%;
   border-radius: 100%;
   border: solid white 20px;
+}
+
+.copyRight {
+  padding: 20px;
+  margin-top: 42vh;
+  background-color: #2d5056;
+  color: white;
+  font-size: 13px;
 }
 
 @media screen and (max-width:650px) {

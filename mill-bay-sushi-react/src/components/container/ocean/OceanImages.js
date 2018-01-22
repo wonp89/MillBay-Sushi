@@ -47,7 +47,6 @@ class OceanImages extends Component {
               <div id={classes.oceanLight}></div>
             </div>
             <Parallax
-              className={classes.parallaxImages1}
               offsetXMax={50}
               offsetXMin={-20}
               slowerScrollRate
@@ -62,9 +61,9 @@ class OceanImages extends Component {
                     cellHeight={400}
                     cols={2}
                   >
-                    {imgeList.map((tile) => (
+                    {imgeList.map((tile, index) => (
                     <GridTile
-                      key={tile.img}
+                      key={index}
                       title={tile.title}
                       subtitle={<span>Price <b>{tile.price}</b></span>}
                     >

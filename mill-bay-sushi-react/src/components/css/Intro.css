@@ -17,6 +17,7 @@
   margin: 20px;
   justify-content: center;
   float: left;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 #kimbob {
@@ -34,6 +35,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 500;
   line-height: 2;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #IntroImages {
@@ -51,6 +53,7 @@
   cursor: pointer;
   margin-top: 30px;
   float:right;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #scrollToMenuInsideDiv {

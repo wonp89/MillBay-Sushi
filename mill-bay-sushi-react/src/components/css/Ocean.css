@@ -52,6 +52,14 @@
   margin: auto;
 }
 
+.copyRight {
+text-align: center;
+color: white;
+padding: 20px;
+background-color: #2d5056;
+font-size: 13px;
+}
+
 #OceanImagesOuterContainer {
     margin-bottom: 20vh;
   max-width: 1440px;

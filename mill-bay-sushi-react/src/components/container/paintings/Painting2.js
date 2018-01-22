@@ -8,8 +8,6 @@ const Footer =  (props) => {
     return (
       <div>
           <Parallax
-            className={classes.parallaxImages1}
-            // disabled='false'
             offsetXMax={100}
             offsetXMin={20}
             offsetYMin={0}

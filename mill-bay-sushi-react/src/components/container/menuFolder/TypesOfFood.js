@@ -8,7 +8,7 @@ const menuTypes =  (props) => {
 
   const foodNames = () =>
     props.types.map((food, index) =>
-      <FoodList key={index} name={food.name} price={food.price} about={food.about} />
+      <FoodList key={index} name={food.name} price={food.price} about={food.about} category={food.category}/>
     )
 
     return (

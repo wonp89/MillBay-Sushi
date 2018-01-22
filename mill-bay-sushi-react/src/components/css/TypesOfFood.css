@@ -15,6 +15,7 @@
   color: black;
   text-align: center;
   margin-top: 7px;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 .overlayContent {
@@ -45,6 +46,7 @@
 
 .overlay .closebtn:hover {
   color: white;
+  cursor: pointer;
 }
 
 #nextPage {
