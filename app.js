@@ -46,7 +46,7 @@ app.use(function(err, req, res, next) {
 });
 
 var port = process.env.PORT || 5000
-app.set('port', port);
-app.listen(port, function() {
+const host = '0.0.0.0';
+app.listen(port, host, function() {
     console.log("App is running on port " + port);
 });
