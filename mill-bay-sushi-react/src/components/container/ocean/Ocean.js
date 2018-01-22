@@ -1,6 +1,6 @@
 import React from 'react';
-import OceanImages from './ocean/OceanImages'
-import classes from '../css/Ocean.css'
+import OceanImages from './OceanImages'
+import classes from '../../css/Ocean.css'
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 const ocean = (props) => {

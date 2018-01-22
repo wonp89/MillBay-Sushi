@@ -67,24 +67,24 @@ render() {
       <MuiThemeProvider>
         <div style={styles.root}>
          <GridList style={styles.gridList} cols={2.2}>
-           {this.state.interiorImgs.map(img => (
+           {this.state.interiorImgs.map((img, index) => (
              <GridTile
                key={img.img}
                title={img.title}
                titleStyle={styles.titleStyle}
                titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
              >
-               <img src={img.img} className={classes.imgsSmall} onClick={this.selectedImage.bind(this, img)} />
+               <img src={img.img} key={index} className={classes.imgsSmall} onClick={this.selectedImage.bind(this, img)} alt="Interior Images" />
              </GridTile>
            ))}
          </GridList>
        </div>
-       {this.state.interiorImgs.map(largeImg =>
+       {this.state.interiorImgs.map((largeImg, index) =>
          {if(this.state.active === largeImg)
-           return <img src={largeImg.img} className={classes.largeImgs} />
+           return <img src={largeImg.img} key={index} className={classes.largeImgs} alt="Interior Images"/>
           }
        )}
-        <img src={interior1} className={classes.largeImgs} ref="firstImg" />
+        <img src={interior1} className={classes.largeImgs} ref="firstImg" alt="" />
       </MuiThemeProvider>
     )
   }

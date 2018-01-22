@@ -1,25 +1,25 @@
 import React from 'react';
-import classes from '../css/menuPanels.css';
+import classes from '../../css/menuPanels.css';
 
 //images for panels
-import Panel from '../img/panel.png'
-import sampleSushi1 from '../img/menuPanelFoodImg1.png'
-import sampleSushi2 from '../img/menuPanelFoodImg2.png'
-import sampleSushi3 from '../img/menuPanelFoodImg3.png'
-import sampleSushi4 from '../img/menuPanelFoodImg4.png'
-import sampleSushi5 from '../img/menuPanelFoodImg5.png'
-import sampleSushi6 from '../img/menuPanelFoodImg6.png'
-import sampleSushi7 from '../img/menuPanelFoodImg7.png'
-import sampleSushi8 from '../img/menuPanelFoodImg8.png'
-import sampleSushi9 from '../img/menuPanelFoodImg9.png'
-import sampleSushi10 from '../img/menuPanelFoodImg10.png'
-import sampleSushi11 from '../img/menuPanelFoodImg11.png'
-import sampleSushi12 from '../img/menuPanelFoodImg12.png'
-import sampleSushi13 from '../img/menuPanelFoodImg13.png'
-import sampleSushi14 from '../img/menuPanelFoodImg14.png'
-import sampleSushi15 from '../img/menuPanelFoodImg15.png'
-import sampleSushi16 from '../img/menuPanelFoodImg16.png'
-import sampleSushi17 from '../img/menuPanelFoodImg17.png'
+import Panel from '../../img/panel.png'
+import sampleSushi1 from '../../img/menuPanelFoodImg1.png'
+import sampleSushi2 from '../../img/menuPanelFoodImg2.png'
+import sampleSushi3 from '../../img/menuPanelFoodImg3.png'
+import sampleSushi4 from '../../img/menuPanelFoodImg4.png'
+import sampleSushi5 from '../../img/menuPanelFoodImg5.png'
+import sampleSushi6 from '../../img/menuPanelFoodImg6.png'
+import sampleSushi7 from '../../img/menuPanelFoodImg7.png'
+import sampleSushi8 from '../../img/menuPanelFoodImg8.png'
+import sampleSushi9 from '../../img/menuPanelFoodImg9.png'
+import sampleSushi10 from '../../img/menuPanelFoodImg10.png'
+import sampleSushi11 from '../../img/menuPanelFoodImg11.png'
+import sampleSushi12 from '../../img/menuPanelFoodImg12.png'
+import sampleSushi13 from '../../img/menuPanelFoodImg13.png'
+import sampleSushi14 from '../../img/menuPanelFoodImg14.png'
+import sampleSushi15 from '../../img/menuPanelFoodImg15.png'
+import sampleSushi16 from '../../img/menuPanelFoodImg16.png'
+import sampleSushi17 from '../../img/menuPanelFoodImg17.png'
 
 //Wood panels
 const style = {

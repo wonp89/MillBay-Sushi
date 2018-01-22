@@ -4,7 +4,7 @@ import topImg2 from '../img/topImage2.png'
 import topImg3 from '../img/topImage3.png'
 import topImg4 from '../img/topImage4.png'
 import topImg5 from '../img/topImage5.png'
-import classes from '../css/topIllustration.css';
+import classes from '../css/topSlidePhotos.css';
 import WOW from 'wowjs';
 
 class TopIllustration extends Component {

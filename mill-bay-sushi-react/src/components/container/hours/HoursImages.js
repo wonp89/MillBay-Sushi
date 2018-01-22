@@ -1,6 +1,6 @@
 import React from 'react';
-import ParallaxImages1 from './parallaxImages/ParallaxImages1'
-import ParallaxImages2 from './parallaxImages/ParallaxImages2'
+import ParallaxImages1 from './parallaxImages/BusinessHours'
+import ParallaxImages2 from './parallaxImages/LunchHours'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import classes from '../../css/menuImages.css'
 import japanesePattern from '../../img/backgroundPattern.png'

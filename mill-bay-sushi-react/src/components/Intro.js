@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import InteriorPhotos from './menus/interiorImages'
+import InteriorPhotos from './container/interiorImages'
 import Scroll from 'react-scroll-to-element';
 import classes from './css/Intro.css';
-import {Link} from 'react-router-dom';
 import logo from './img/logo.png'
 import WOW from 'wowjs';
 
@@ -15,7 +14,7 @@ class Intro extends Component {
   render() {
     return (
       <div id={classes.Intro}>
-        <img id={classes.logo} src={logo} />
+        <img id={classes.logo} src={logo} alt="" />
           <div id={classes.paragraph}>
               <div>
                 <h1 id={classes.IntroContent} className="wow fadeInLeft">EAT SUSHI AT MILL BAY</h1>

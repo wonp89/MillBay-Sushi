@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import classes from '../../css/Footer.css'
-import footerImage from '../../img/footerImage.png'
+import classes from '../../css/salmonPainting.css'
+import footerImage from '../../img/salmonPainting1.png'
 import waterSplash from '../../img/waterSplash.png'
 import WOW from 'wowjs';
 
@@ -11,8 +11,8 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <img src={footerImage} id={classes.contactFooterImage} style={{width: '100%'}}/>
-        <img src={waterSplash} className="wow fadeInDown" id={classes.waterSplash} />
+        <img src={footerImage} id={classes.contactFooterImage} alt="Salmon"/>
+        <img src={waterSplash} className="wow fadeInDown" id={classes.waterSplash} alt="water splashing"/>
       </div>
     )
   }

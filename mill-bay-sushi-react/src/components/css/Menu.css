@@ -32,6 +32,18 @@
   font-family: fantasy;
 }
 
+#sashimiMiddleImage {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 10px #dbdbdb;
+}
+
 #overlaidText {
   color: white;
   font-size: 50px;

@@ -53,7 +53,7 @@ class OceanImages extends Component {
               slowerScrollRate
               tag="figure"
               >
-                <img src={whaleImage} id={classes.whale} />
+                <img src={whaleImage} id={classes.whale} alt="" />
             </Parallax>
           </div>
             <div id={classes.OceanImagesOuterContainer}>

@@ -1,41 +1,41 @@
-.parallaxImages1 {
+.businessHours {
   flex-grow: 1;
   height: 300px;
 }
 
-.parallaxImages2 {
+.lunchHours {
   flex-grow: 1;
   height: 300px;
 }
 
-.parallaxImages1 div {
+.businessHours div {
   text-align: center;
   height: 100%;
   width: 40vw;
 }
 
-.parallaxImages2 div {
+.lunchHours div {
   text-align: center;
   height: 100%;
   width: 40vw;
 }
 
-.parallaxImages1 div h1 {
+.businessHours div h1 {
   margin: 30px;
 }
 
-.parallaxImages2 div h1 {
+.lunchHours div h1 {
   margin: 30px;
 }
 
-#parallaxImages1Content {
+#businessHoursContent {
   border: solid 10px #52d392;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#parallaxImages2Content {
+#lunchHoursContent {
   border: solid 10px #4b8d6c;
   margin-top: 80px;
   display: flex;
@@ -44,11 +44,11 @@
 }
 
 @media screen and (max-width: 615px) {
-  .parallaxImages1 {width: 100vw}
-  .parallaxImages2 {width: 100vw}
+  .businessHours {width: 100vw}
+  .lunchHours {width: 100vw}
 }
 
 @media screen and (max-width: 875px) {
-  .parallaxImages1 div {width: 100%}
-  .parallaxImages2 div {width: 100%}
+  .businessHours div {width: 100%}
+  .lunchHours div {width: 100%}
 }

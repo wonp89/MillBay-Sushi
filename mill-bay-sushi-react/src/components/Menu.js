@@ -1,27 +1,27 @@
 import React, {Component} from 'react';
-import TopIllustration from './menus/TopIllustration'
+import TopSlideImages from './container/TopSlidePhotos'
 import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
 import middleImg from './img/middleImage.png'
 import pwPatternImage from './img/pw_pattern.png'
 import togoMenuImage from './img/togoMenuImage.png'
 import togoMenu from './img/MillBaySushi-TogoMenu.pdf'
-import MenuPanels from './menus/MenuPanels';
-import MenuImages from './menus/menuImages/MenuImages';
-import Footer2 from './menus/footer/Footer2';
-import TypesOfFood from './menus/TypesOfFood'
-import Ocean from './menus/Ocean'
+import MenuPanels from './container/menuFolder/MenuPanels';
+import Hours from './container/hours/HoursImages';
+import SalmonPainting2 from './container/paintings/Painting2';
+import TypesOfFood from './container/menuFolder/TypesOfFood'
+import Ocean from './container/ocean/Ocean'
 import classes from './css/Menu.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import WOW from 'wowjs';
 
 class Menu extends Component {
-  state = {menu: []}
+  state = {menu: []};
   componentDidMount() {
     new WOW.WOW().init();
     fetch('/menu')
       .then(res => res.json())
-      .then(menu => this.setState({ menu }));
+      .then(menu => this.setState({ menu: menu }));
   }
 
 //boolean for displaying menus
@@ -42,9 +42,6 @@ class Menu extends Component {
     if (nextPage === undefined) nextPage = menus[0]
     nextPage.show = !nextPage.show
     this.setState({menu: menus})
-    if(id.key == 'Enter'){
-      console.log('enter press here! ')
-    }
   }
 
 //pressing button goes to the previous pages.
@@ -58,27 +55,15 @@ class Menu extends Component {
   }
 
     render() {
-      const middleImage = {
-        backgroundImage: 'url(' + middleImg + ')',
-        backgroundAttachment: 'fixed',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderBottom: "solid 10px #dbdbdb"
-      }
 
       return (
           <div id="Menu">
             <Scroll>
               <div id={classes.scrollTop}>⇪</div>
             </Scroll>
-            <TopIllustration />
+            <TopSlideImages />
             <Intro />
-            <div  style={middleImage}>
+            <div  style={{backgroundImage: 'url(' + middleImg + ')'}} id={classes.sashimiMiddleImage}>
               <h1 id={classes.overlaidText}>MILL BAY + SUSHI = ♡</h1>
             </div>
             <div id={classes.AllTypes} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
@@ -91,20 +76,20 @@ class Menu extends Component {
             </div>
             <div id={classes.menuContent} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
               <a href={togoMenu} style={{marginBottom: '0'}} target="_blank">
-                <img style={{width: '100px'}} src={togoMenuImage} />
+                <img style={{width: '100px'}} src={togoMenuImage} alt="" />
               </a>
               <h3 style={{marginTop: '0'}}>Take Out Menu PDF</h3>
             </div>
-            <MenuImages className='wow fadeIn'/>
+            <Hours className='wow fadeIn'/>
             <div>
               {this.state.menu.map((types, index)  =>
-                {if (types.show === true) {
+                {if (types.show === true)
                     return <TypesOfFood foodType={types.name} key={index} types={types.food} click={() => this.showMenu(types.id)} next={() => this.nextMenu(types.id)} previous={() => this.previousMenu(types.id)} />
-                }}
+                }
               )}
             </div>
             <ParallaxProvider>
-              <Footer2 />
+              <SalmonPainting2 />
             </ParallaxProvider>
             <Ocean />
           </div>
