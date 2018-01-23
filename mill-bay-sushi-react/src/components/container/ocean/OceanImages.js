@@ -46,14 +46,16 @@ class OceanImages extends Component {
               <img id={classes.submarine} src={submarineImage} alt="" />
               <div id={classes.oceanLight}></div>
             </div>
-            <Parallax
-              offsetXMax={50}
-              offsetXMin={-20}
-              slowerScrollRate
-              tag="figure"
-              >
-                <img src={whaleImage} id={classes.whale} alt="" />
-            </Parallax>
+            <div  style={{overflowX: "hidden"}}>
+              <Parallax
+                offsetXMax={50}
+                offsetXMin={0}
+                slowerScrollRate
+                tag="figure"
+                >
+                  <img src={whaleImage} id={classes.whale} alt="" />
+              </Parallax>
+            </div>
           </div>
             <div id={classes.OceanImagesOuterContainer}>
                 <div id={classes.OceanImagesContainer} className="wow fadeIn">
