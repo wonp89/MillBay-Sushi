@@ -76,6 +76,7 @@ span {
   background-color: #2d5056;
   color: white;
   font-size: 13px;
+  max-width: 1440px;
 }
 
 @media screen and (max-width:650px) {

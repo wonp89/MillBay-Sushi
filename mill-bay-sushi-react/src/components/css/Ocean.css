@@ -19,9 +19,10 @@
   text-align: right;
   margin-right: 20vw;
   transform: rotate(-90deg);
-  margin-bottom: 10vw;
+  margin-bottom: 150px;
   transform: rotate(90deg);
   transform-origin: right top 0;
+  width: 1000px;
 }
 
 #oceanLight{
@@ -33,7 +34,7 @@
   height: 30px;
   background-color: #e6e6be;
   border-radius: 50%;
-  box-shadow: 0px 0px 260px 75px #ffffff;
+  box-shadow: 0px 0px 160px 75px #ffffff;
 }
 
 #whale {
@@ -53,11 +54,12 @@
 }
 
 .copyRight {
-text-align: center;
-color: white;
-padding: 20px;
-background-color: #2d5056;
-font-size: 13px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: #2d5056;
+  font-size: 13px;
+  width: 1440px;
 }
 
 #OceanImagesOuterContainer {

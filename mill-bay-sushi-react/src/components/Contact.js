@@ -34,7 +34,6 @@ class Contact extends Component {
           subject: self.refs.subject.value,
           text: self.refs.text.value
         })
-        // .then(() => loading = true)  << idea of setting up loading page
       }
     )
     .then(() => {
@@ -95,7 +94,7 @@ class Contact extends Component {
             mapElement={<div id={classes.mapElement} />}
             />
         </div>
-        <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Illustration & Photo & Website: wonpark89@gmail.com</center>
+        <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Illustration & Photography & Website: wonpark89@gmail.com</center>
       </MuiThemeProvider>
     );
   }

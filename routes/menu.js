@@ -1028,6 +1028,16 @@ router.get('/menu', function(req, res, next) {
           about: "Sapporo (Pitcher)"
         },
         {
+          name: "Draught Beer",
+          price: "$5.95",
+          about: "VI (Pint)"
+        },
+        {
+          name: "Draught Beer",
+          price: "$15.95",
+          about: "VI (Pitcher)"
+        },
+        {
           category: "Sake"
         },
         {

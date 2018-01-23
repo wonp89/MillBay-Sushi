@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 
 var contact = require('./routes/contact');
 var menu = require('./routes/menu');
-// var users = require('./routes/users');
 
 var app = express();
 
@@ -22,11 +21,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'mill-bay-sushi-react/build')))
-// app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(menu);
 app.use(contact);
-// app.use('/users', users);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/mill-bay-sushi-react/build/index.html'));
