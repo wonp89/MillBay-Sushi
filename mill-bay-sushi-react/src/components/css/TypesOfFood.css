@@ -31,7 +31,7 @@
     margin-bottom: 50px;
 }
 
-.overlay a, h2 {
+.overlay h2 {
     padding: 8px;
     text-decoration: none;
     color: #818181;
@@ -39,6 +39,9 @@
 }
 
 .overlay .closebtn {
+    z-index: 1;
+    opacity:0.6;
+    color: #a6a6a6;
     position: fixed;
     right: 20px;
     font-size: 60px;
@@ -46,24 +49,30 @@
 
 .overlay .closebtn:hover {
   color: white;
+  opacity: 1;
   cursor: pointer;
 }
 
 #nextPage {
+  z-index: 1;
+  opacity: 0.6;
   position: fixed;
   right:0;
   margin-top: 48vh;
   margin-right: 20px;
-  color: #818181;
+  color: #a6a6a6;
   font-size: 50px;
   cursor: pointer;
 }
 
 #nextPage:hover {
   color: white;
+  opacity: 1;
 }
 
 #previousPage {
+  z-index: 1;
+  opacity: 0.6;
   position: fixed;
   margin-top: 48vh;
   margin-left: 15px;
@@ -74,6 +83,7 @@
 
 #previousPage:hover {
   color: white;
+  opacity: 1;
 }
 
 @media screen and (max-height: 450px) {

@@ -43,6 +43,16 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+@media screen and (max-width: 1280px) and (min-width:800px) {
+  #businessHoursContent{width: 40vw;}
+  #lunchHoursContent{width: 40vw;}
+}
+
+@media screen and (max-width: 1000px) and (min-width:800px) {
+  #businessHoursContent{width: 40vw;}
+  #lunchHoursContent{width: 35vw;margin-right:0}
+}
+
 @media screen and (max-width: 615px) {
   .businessHours {width: 100vw}
   .lunchHours {width: 100vw}

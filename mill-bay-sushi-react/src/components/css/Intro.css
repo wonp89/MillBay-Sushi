@@ -20,11 +20,6 @@
   font-family: 'Hind Siliguri', sans-serif;
 }
 
-#kimbob {
-  margin-right: 30px;
-  margin-top: 0;
-}
-
 #paragraph {
   color: white;
   padding: 40px;
@@ -36,6 +31,28 @@
   font-weight: 500;
   line-height: 2;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+#arrowConatainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#arrow1 {
+  color: white;
+  animation-delay: 0.2s
+}
+#arrow2 {
+  color: white;
+  animation-delay: 0.3s
+}
+#arrow3 {
+  color: white;
+  animation-delay: 0.4s
+}
+#arrow4 {
+  color: white;
+  animation-delay: 0.5s
 }
 
 #IntroImages {
@@ -76,4 +93,9 @@
 
 @media screen and (max-width:450px) {
   #logo { width: 260px;}
+  #arrowConatainer {margin-left: 0}
+  #arrow1 {margin-left: 0}
+  #arrow2 {margin-left: 0}
+  #arrow3 {margin-left: 0}
+  #arrow4 {margin-left: 0}
 }

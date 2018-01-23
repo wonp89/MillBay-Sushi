@@ -18,11 +18,11 @@ class Intro extends Component {
           <div id={classes.paragraph}>
               <div>
                 <h1 id={classes.IntroContent} className="wow fadeInLeft">EAT SUSHI AT MILL BAY</h1>
-                <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                  <h1 style={{color: 'white', animationDelay: '0.2s'}} className="wow fadeInDown">▼</h1>
-                  <h1 style={{color: 'white', animationDelay: '0.3s'}} className="wow fadeInDown">▼</h1>
-                  <h1 style={{color: 'white', animationDelay: '0.4s'}} className="wow fadeInDown">▼</h1>
-                  <h1 style={{color: 'white', animationDelay: '0.5s'}} className="wow fadeInDown">▼</h1>
+                <div id={classes.arrowConatainer}>
+                  <h1 id={classes.arrow1} className="wow fadeInDown">▼</h1>
+                  <h1 id={classes.arrow2} className="wow fadeInDown">▼</h1>
+                  <h1 id={classes.arrow3} className="wow fadeInDown">▼</h1>
+                  <h1 id={classes.arrow4} className="wow fadeInDown">▼</h1>
                 </div>
                 <p style={{color: 'white', animationDelay: '0.7s'}} className="wow fadeIn">
                 Mill Bay Sushi is a Japanese restaurant located at beautiful town Mill bay, BC. Mill Bay sushi can offer you amazing dining experience with outstanding quality service that will exceed your expectation. Our chefs have years of experience and they ensure freshness of the ingredients and create innovative dishes.
