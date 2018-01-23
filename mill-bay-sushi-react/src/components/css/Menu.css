@@ -4,7 +4,7 @@
   justify-content: space-around;
   background-color: #eeefea;
   border-top: dotted 100px #f4eec7;
-  padding: 15vw;
+  padding: 15%;
   padding-top: 150px;
   padding-bottom: 150px;
 }
@@ -19,6 +19,9 @@
   width: 49px;
   border-radius: 2px;
   box-shadow: 5px 5px 10px #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #menuHeading h1  {
@@ -26,10 +29,9 @@
   word-wrap: break-word;
   width:1em;
   box-sizing:border-box;
-  margin-top: 0;
   margin-left: 10px;
   -webkit-font-smoothing: antialiased;
-  font-family: fantasy;
+  font-family: fantasy, sans-serif;
 }
 
 #sashimiMiddleImage {

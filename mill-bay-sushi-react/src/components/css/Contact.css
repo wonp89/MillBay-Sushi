@@ -3,10 +3,18 @@
   margin: 0;
   color: white;
   height: 350px;
-  padding-top: 20px;
   background-color: #0e0e0e;
   display: flex;
   align-items: center;
+}
+
+#contactH1 {
+  background-color: #0e0e0e;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 #emptyDiv {
@@ -52,11 +60,11 @@ span {
 
 /* map */
 #mapContainerElement {
+
   height: 45vw;
-  width: 45vw;
-  float: right;
+  width: 100%;
+  margin-top: -180px;
   margin-right: 10vw;
-  margin-top: -400px;
   margin-bottom: 50px;
 }
 
@@ -66,13 +74,11 @@ span {
 
 #mapElement {
   height: 100%;
-  border-radius: 100%;
   border: solid white 20px;
 }
 
 .copyRight {
   padding: 20px;
-  margin-top: 42vh;
   background-color: #2d5056;
   color: white;
   font-size: 13px;
@@ -80,16 +86,17 @@ span {
 }
 
 @media screen and (max-width:650px) {
-  #contactHeading {text-align: center; display: block; height: 300px;}
+  #contactHeading {display: block; height: 300px;}
   #contactHeadingContent {border: none !important;}
   #phoneImage {display: none;}
   #contactForm {display: none;}
 }
 
 @media screen and (max-width: 1000px) {
-  #mapContainerElement {margin-top:-300px}
+  #mapContainerElement {margin-top: -100px}
 }
 
 @media screen and (max-width: 500px) {
-  #mapContainerElement {margin-top:-100px;}
+  #mapElement {border: none;}
+  #mapContainerElement {margin-top:-50px;}
 }

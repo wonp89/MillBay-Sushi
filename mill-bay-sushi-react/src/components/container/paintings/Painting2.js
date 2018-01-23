@@ -17,7 +17,7 @@ const Footer =  (props) => {
             >
               <img src={footerImageSalmons} style={{width: '40%'}} alt="" />
             </Parallax>
-            <img src={footerImage} style={{width: '100%', marginTop: '-423px'}} alt=""/>
+            <img src={footerImage} style={{width: '100%', marginTop: '-430px'}} alt=""/>
       </div>
     )
   }
