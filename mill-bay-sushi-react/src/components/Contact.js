@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Map from './container/Map'
+import salmonPainting from './img/salmonPainting1.png'
 import classes from './css/Contact.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -46,10 +47,14 @@ class Contact extends Component {
     var button = null;
     this.state.sent === false ? button = <RaisedButton label="SEND" type="submit" primary={true} /> : button = <RaisedButton label="MESSAGE SENT" type="submit" primary={true} disabled />
 
+    const style = {
+      backgroundImage: 'url(' + salmonPainting + ')'
+    };
+
     return (
       <MuiThemeProvider>
         <div>
-          <div id={classes.contactHeading}>
+          <div id={classes.contactHeading} style={style}>
             <div id={classes.emptyDiv}></div>
             <form id={classes.contactForm} className="contact-form" onSubmit={this.onSubmit}>
               <div className={classes.formField}>

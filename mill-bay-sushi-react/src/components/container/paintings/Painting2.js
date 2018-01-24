@@ -1,5 +1,5 @@
 import React from 'react';
-import footerImage from '../../img/salmonPainting2.png'
+import oceanPainting from '../../img/salmonPainting2.png'
 import footerImageSalmons from '../../img/salmonPainting2Salmons.png'
 import { Parallax } from 'react-scroll-parallax';
 
@@ -16,7 +16,7 @@ const Footer =  (props) => {
               <img src={footerImageSalmons} style={{width: '40%'}} alt="" />
             </Parallax>
           </div>
-            <img src={footerImage} style={{width: '100%', marginTop: '-600px'}} alt=""/>
+            <img src={oceanPainting} style={{width: '100%', marginTop: '-600px'}} alt=""/>
       </div>
     )
   }

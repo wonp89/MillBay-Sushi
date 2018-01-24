@@ -4,6 +4,7 @@ import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
 import middleImg from './img/middleImage.jpg'
 import pwPatternImage from './img/pw_pattern.png'
+import cloud from './img/cloud.png'
 import togoMenuImage from './img/togoMenuImage.png'
 import togoMenu from './img/MillBaySushi-TogoMenu.pdf'
 import MenuPanels from './container/menuFolder/MenuPanels';
@@ -75,11 +76,12 @@ class Menu extends Component {
                 )}
             </div>
             <div id={classes.menuContent} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
-              <h3 style={{marginTop: '0'}} className="wow fadeInDown">▼</h3>
+              <h3 style={{marginTop: '0'}} id={classes.takeOutMenuPointer}>▼</h3>
               <a href={togoMenu} style={{marginBottom: '0'}} target="_blank">
                 <span>Take Out Menu PDF</span>
               </a>
             </div>
+            <img src={cloud} style={{boxShadow: '0px 70px 100px white'}}/>
             <Hours className='wow fadeIn'/>
             <div>
               {this.state.menu.map((types, index)  =>

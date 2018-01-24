@@ -4,11 +4,23 @@
 
 .largeImgs {
   width: 60%;
+  border: solid 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.blackBackground {
+  width: 60%;
   margin-top: 30px;
   margin-bottom: 30px;
   border: solid 20px;
 }
 
 @media screen and (max-width: 760px) {
-  .largeImgs {width: 100%}
+  .largeImgs {width: 100%; border:none;}
+  .blackBackground {width: 100%; border:none;}
 }

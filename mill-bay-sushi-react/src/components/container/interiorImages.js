@@ -12,6 +12,7 @@ import interior5 from '../img/interior/interior5.png';
 import interior6 from '../img/interior/interior6.png';
 import interior7 from '../img/interior/interior7.png';
 import interior8 from '../img/interior/interior8.png';
+import blackBackground from '../img/interior/blackBackground.png';
 
 class InteriorImages extends Component {
   state = {
@@ -85,6 +86,7 @@ render() {
           }
        )}
         <img src={interior1} className={classes.largeImgs} ref="firstImg" alt="" />
+        <img src={blackBackground} className={classes.blackBackground} alt="" />
       </MuiThemeProvider>
     )
   }
