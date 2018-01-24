@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #eeefea;
-  border-top: dotted 100px #f4eec7;
   padding: 15%;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -31,7 +30,7 @@
   box-sizing:border-box;
   margin-left: 10px;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
 }
 
 #sashimiMiddleImage {
@@ -43,18 +42,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid 10px #dbdbdb;
 }
 
 #overlaidText {
-  color: black;
-  font-size: 50px;
-  background-color: white;
+  color: white;
+  font-size: 70px;
   padding: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
-  box-shadow: 5px 5px #c7c7c7;
-  font-family: 'Hind Siliguri', sans-serif;
+  border: solid 10px #f3f3f3;
 }
 
 #menuContent {
@@ -63,9 +57,20 @@
   padding-bottom: 150px;
 }
 
-#menuContent > h3 {
-  font-family: 'Cabin Sketch', cursive;
+#menuContent > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#menuContent > a > span {
+  font-family: 'Shadows Into Light Two', cursive;
+  color: black;
   margin-top:0;
+}
+
+#menuContent > a > span:hover {
+  text-decoration: underline;
 }
 
 #scrollTop {

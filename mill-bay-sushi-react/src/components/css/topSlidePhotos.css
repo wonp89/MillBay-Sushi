@@ -1,8 +1,7 @@
 #topImage {
   background-color: black;
-  min-height: 100vh;
+  min-height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: solid 1px white;
 }

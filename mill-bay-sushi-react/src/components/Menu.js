@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import TopSlideImages from './container/TopSlidePhotos'
 import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
-import middleImg from './img/middleImage.png'
+import middleImg from './img/middleImage.jpg'
 import pwPatternImage from './img/pw_pattern.png'
 import togoMenuImage from './img/togoMenuImage.png'
 import togoMenu from './img/MillBaySushi-TogoMenu.pdf'
@@ -75,10 +75,10 @@ class Menu extends Component {
                 )}
             </div>
             <div id={classes.menuContent} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
+              <h3 style={{marginTop: '0'}} className="wow fadeInDown">▼</h3>
               <a href={togoMenu} style={{marginBottom: '0'}} target="_blank">
-                <img style={{width: '100px'}} src={togoMenuImage} alt="" />
+                <span>Take Out Menu PDF</span>
               </a>
-              <h3>Take Out Menu PDF</h3>
             </div>
             <Hours className='wow fadeIn'/>
             <div>

@@ -1,3 +1,11 @@
+#hoursImagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 800px;
+  padding-top: 200px;
+  background: linear-gradient(#f3f3f3, #ffffb5);
+}
+
 .businessHours {
   flex-grow: 1;
   height: 300px;

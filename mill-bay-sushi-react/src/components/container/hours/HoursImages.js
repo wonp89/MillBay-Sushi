@@ -2,15 +2,12 @@ import React from 'react';
 import ParallaxImages1 from './parallaxImages/BusinessHours'
 import ParallaxImages2 from './parallaxImages/LunchHours'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import classes from '../../css/menuImages.css'
-import japanesePattern from '../../img/backgroundPattern.png'
+import classes from '../../css/hoursImages.css'
+import japanesePattern from '../../img/pw_pattern.png'
 
 const MenuImages =  (props) => {
-  const backgroundPattern = {
-    backgroundImage: 'url(' + japanesePattern + ')'
-  }
     return (
-          <div id={classes.images} style={backgroundPattern}>
+          <div id={classes.hoursImagesContainer} >
             <ParallaxProvider>
                 <ParallaxImages1 />
                 <ParallaxImages2 />
@@ -19,4 +16,4 @@ const MenuImages =  (props) => {
     )
   }
 
-export default MenuImages;
+export default MenuImages;   

@@ -19,7 +19,9 @@ const menuTypes =  (props) => {
           <div className={classes.overlayContent}>
             <h1 id={classes.foodType}>{props.foodType}</h1>
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-              {foodNames()}
+              <div style={{padding: '30px'}}>
+                {foodNames()}
+              </div>
             </Animated>
           </div>
         </div>

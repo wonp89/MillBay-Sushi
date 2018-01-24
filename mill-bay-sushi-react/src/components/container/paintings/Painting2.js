@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from '../../css/salmonPainting.css'
 import footerImage from '../../img/salmonPainting2.png'
 import footerImageSalmons from '../../img/salmonPainting2Salmons.png'
 import { Parallax } from 'react-scroll-parallax';
