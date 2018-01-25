@@ -71,7 +71,7 @@ router.get('/menu', function(req, res, next) {
         },
         {
           name: "Seafood Sunomono",
-          price: "$1.90"
+          price: "$10.90"
         },
         {
           name: "Gomae Salad",

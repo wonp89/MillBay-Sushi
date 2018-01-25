@@ -1,31 +1,16 @@
 #Intro{
+  padding-bottom: 100px;
   text-align: center;
   background-color: #f3f3f3;
   padding-top: 80px;
 }
 
-#introContainter {
-  margin-top: 100px;
-}
-
 #logo {
   width: 400px;
-  margin-top: 80px;
-  margin-bottom: 30px;
-}
-
-#IntroContent {
-  border: solid;
-  margin-bottom: 20px;
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-  width: 50%;
 }
 
 #introParagraph {
   color: black;
-  padding: 40px;
 }
 
 #paragraph {
@@ -45,18 +30,18 @@
 #IntroImages {
   width:100%;
   background-color: #f3f3f3;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #scrollToMenu {
+  border-radius: 20px;
   text-align: center;
   border: solid 1px #3fabf2;
   color: #3fabf2;
-  padding: 20px;
   margin: auto;
   width: 150px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 25px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 

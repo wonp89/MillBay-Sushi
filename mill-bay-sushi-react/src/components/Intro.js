@@ -17,17 +17,15 @@ class Intro extends Component {
         <img id={classes.logo} src={logo} alt="" />
           <div id={classes.paragraph}>
               <div id={classes.introContainter}>
-                <h1 id={classes.IntroContent} className="wow fadeInDown">EAT SUSHI AT MILL BAY</h1>
                 <div className="wow fadeIn">
-                  <h1 style={{marginLeft: "0"}}>__</h1>
                   <p id={classes.introParagraph} >
                   Mill Bay Sushi is a Japanese restaurant located at beautiful town Mill bay, BC. Mill Bay sushi can offer you amazing dining experience with outstanding quality service that will exceed your expectation. Our chefs have years of experience and they ensure freshness of the ingredients and create innovative dishes.
                   The restaurant has near 150 seats that can provide plenty of space for large groups of people who want our Japanese and Korean cuisine. Please contact us for more information.
                   </p>
-                  <Scroll type="id" element="Menu__AllTypes__2S_3b">
-                    <div id={classes.scrollToMenu}>GO TO MENU</div>
-                  </Scroll>
                 </div>
+                <Scroll type="id" element="Menu__AllTypes__2S_3b">
+                  <div id={classes.scrollToMenu}>GO TO MENU</div>
+                </Scroll>
               </div>
           </div>
         <div id={classes.IntroImages}>
