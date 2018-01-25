@@ -21,7 +21,7 @@ class parallaxImages1 extends Component {
                 <h3 style={{marginTop: '0'}}>Business</h3>
                 <h1>Hour 11:30am ~ 9:00pm, 7 Days</h1>
                 <h3 style={{marginTop: '40px'}}>Lunch</h3>
-                <h1>Hour 11:00am ~ 2:30pm</h1>
+                <h1>Hour 11:30am ~ 2:30pm</h1>
               </center>
             </div>
           </Parallax>

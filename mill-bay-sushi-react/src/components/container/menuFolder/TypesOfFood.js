@@ -12,7 +12,7 @@ const menuTypes =  (props) => {
     )
 
     return (
-        <div className={classes.overlay} style={{backgroundImage: 'url(' + treeBackgroundImage + ')'}}>
+        <div className={classes.overlay} >
           <h1 id={classes.nextPage} onClick={props.next}>▻▻</h1>
           <h1 id={classes.previousPage} onClick={props.previous}>◅◅</h1>
           <a className={classes.closebtn} onClick={props.click}>&times;</a>
