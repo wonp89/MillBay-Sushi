@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import topImg from '../img/topImage1.jpg'
 import topImg2 from '../img/topImage2.jpg'
-import topImg3 from '../img/topImage3.jpg'
-import topImg4 from '../img/topImage4.jpg'
-import topImg5 from '../img/topImage5.jpg'
+import topImg3 from '../img/topImage4.jpg'
 import classes from '../css/topSlidePhotos.css';
 import WOW from 'wowjs';
 
 class TopIllustration extends Component {
   state = {
     slideImgs: [
-      {images: [topImg, topImg2, topImg3, topImg4, topImg5], index: 0}
+      {images: [topImg, topImg2, topImg3], index: 0}
     ]
   }
   componentDidMount() {
