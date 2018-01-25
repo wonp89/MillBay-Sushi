@@ -7,11 +7,8 @@
   align-items: center;
   padding-top: 50px;
   border-bottom: solid 10px #fdfdfd;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 80vh;
 }
 
 #emptyDiv {
@@ -52,7 +49,7 @@
 }
 
 span {
-  color: #d74c49;
+  color: #abacff;
 }
 
 /* map */
@@ -80,7 +77,6 @@ span {
 
 @media screen and (max-width:650px) {
   #contactHeading {display: block; height: 300px;}
-  #contactHeadingContent {border: none !important;}
   #phoneImage {display: none;}
   #contactForm {display: none;}
 }

@@ -64,11 +64,6 @@
   cursor: pointer;
 }
 
-#nextPage:hover {
-  color: white;
-  opacity: 1;
-}
-
 #foodNamesContainer {
   padding: 30px;
 }
@@ -82,11 +77,6 @@
   color: #818181;
   font-size: 50px;
   cursor: pointer;
-}
-
-#previousPage:hover {
-  color: white;
-  opacity: 1;
 }
 
 @media screen and (max-width: 550px) {

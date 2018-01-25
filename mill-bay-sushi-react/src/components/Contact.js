@@ -75,7 +75,7 @@ class Contact extends Component {
                   <input type="text" ref="from" required />
                 </label>
               </div>
-              <div className={classes.formField} style={this.state.sent === false ? {borderBottom: "dotted"} : {borderBottom: "solid rgb(100, 216, 242)"}} >
+              <div className={classes.formField} style={this.state.sent === false ? {borderBottom: "none"} : {borderBottom: "solid rgb(100, 216, 242)"}} >
                 <label htmlFor="text">
                   <div className="label-content">Message:</div>
                   <textarea className="stretch" ref="text" rows="5" required />
@@ -84,7 +84,7 @@ class Contact extends Component {
               {button}
             </form>
 
-            <div id={classes.contactHeadingContent} style={this.state.sent === false ? {border: "dotted"} : {border: "solid rgb(100, 216, 242)"}} >
+            <div id={classes.contactHeadingContent} style={this.state.sent === false ? {border: "none"} : {border: "solid rgb(100, 216, 242)"}} >
                   <h1 className="wow fadeInUp"><a href="tel:+2509297117" id={classes.phoneNumber}> 250. 929.  7117</a></h1>
                   <p style={{animationDelay: '0.2s'}} className="wow fadeInUp"><span>Email</span> millbay.sushi@gmail.com</p>
                   <p style={{animationDelay: '0.3s'}} className="wow fadeInUp"><span>Address</span> 2720 Mill bay RD, Mill bay, BC, V0R 2P1</p>

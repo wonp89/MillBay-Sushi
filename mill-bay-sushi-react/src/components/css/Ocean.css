@@ -2,84 +2,41 @@
   height: 100vh;
   width: 100vw;
   background-color: #061f24;
-}
-
-#submarineContainer {
-  display: flex;
-  margin-left: 20vw;
-  margin-bottom: 10vh;
-}
-
-#submarine {
-  opacity: 0.9;
-}
-
-#oceanHeading {
-  color: #7bc8f8;
-  text-align: right;
-  margin-right: 20vw;
-  transform: rotate(-90deg);
-  margin-bottom: 150px;
-  transform: rotate(90deg);
-  transform-origin: right top 0;
-}
-
-#oceanLight{
-  opacity: 0.7;
-  position: absolute;
-  margin-top: 65px;
-  margin-left: 260px;
-  width: 30px;
-  height: 30px;
-  background-color: #e6e6be;
-  border-radius: 50%;
-  box-shadow: 0px 0px 160px 75px #ffffff;
-}
-
-#whale {
-  margin-left: 30vw;
-  opacity: 0.9;
+  text-align: center;
 }
 
 /*---- OceanImages.css -------*/
-#OceanImagesContainer {
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    box-shadow: 0 0 20px 1px #b6b6b6;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    margin-top: -4px;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.galleryContainer {
+  margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  width: 70%;
-  height: 100%;
-  border-radius: 8px;
-  margin: auto;
 }
 
 .copyRight {
+  margin-top: 50px;
   text-align: center;
   color: white;
   padding: 20px;
   background-color: #2d5056;
   font-size: 13px;
   max-width: 1440px;
-}
-
-#OceanImagesOuterContainer {
-  margin-bottom: 20%;
-  max-width: 1440px;
-  padding-top: 100px;
-}
-
-@media screen and (max-width: 1000px) {
-  #oceanHeading {margin-top: 150px;}
-}
-
-@media screen and (max-width: 800px) {
-  #oceanHeading {font-size: 30px;margin-top: 300px;}
-}
-
-@media screen and (max-width: 600px) {
-  #submarineContainer {margin-left: 4vw;}
-  #submarine {width: 150px; height: 61px;}
-  #oceanLight {margin-top: 0; margin-left: 100px;box-shadow: 0px 0px 130px 45px #ffffff; width: 15px; height: 15px;}
-  #whale {width: 800px;}
-  #OceanImagesOuterContainer {padding-top: 20px}
-  #oceanHeading {font-size: 24px;margin-top: 300px;}
 }

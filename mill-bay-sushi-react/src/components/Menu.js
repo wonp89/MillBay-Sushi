@@ -5,7 +5,6 @@ import Intro from './Intro';
 import middleImg from './img/middleImage.jpg'
 import pwPatternImage from './img/pw_pattern.png'
 import cloud from './img/cloud.png'
-import togoMenuImage from './img/togoMenuImage.png'
 import togoMenu from './img/MillBaySushi-TogoMenu.pdf'
 import MenuPanels from './container/menuFolder/MenuPanels';
 import Hours from './container/hours/HoursImages';
@@ -82,7 +81,7 @@ class Menu extends Component {
               </a>
             </div>
             <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '130px'}}>
-              <img src={cloud} style={{boxShadow: '0px 70px 100px white'}}/>
+              <img src={cloud} style={{position: 'sticky', zIndex: '-1'}} alt="" />
             </div>
             <Hours className='wow fadeIn'/>
             <div>
