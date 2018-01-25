@@ -52,6 +52,7 @@
 }
 
 #menuContent {
+  margin: -1px;
   text-align: center;
   background-color: #eff0eb;
   padding-bottom: 150px;
@@ -108,5 +109,6 @@
 }
 
 @media screen and (max-width:500px) {
+  #overlaidText {font-size: 50px;}
   #AllTypes {padding: 0;padding-bottom: 150px; padding-top:100px;}
 }

@@ -66,8 +66,8 @@
   transition: 0.3s;
 }
 
-@media screen and (max-width:450px) {
-  #introParagraph {padding: 20px;}
+@media screen and (max-width:500px) {
+  #introParagraph {padding: 0;}
   #logo { width: 260px;}
 }
 

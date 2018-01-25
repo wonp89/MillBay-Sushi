@@ -81,7 +81,9 @@ class Menu extends Component {
                 <span>Take Out Menu PDF</span>
               </a>
             </div>
-            <img src={cloud} style={{boxShadow: '0px 70px 100px white'}}/>
+            <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '130px'}}>
+              <img src={cloud} style={{boxShadow: '0px 70px 100px white'}}/>
+            </div>
             <Hours className='wow fadeIn'/>
             <div>
               {this.state.menu.map((types, index)  =>
