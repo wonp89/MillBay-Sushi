@@ -3,6 +3,7 @@ import classes from '../../../css/hoursImages.css'
 import { Parallax } from 'react-scroll-parallax';
 import WOW from 'wowjs';
 
+
 class parallaxImages1 extends Component {
   componentDidMount() {
     new WOW.WOW().init();

@@ -5,7 +5,7 @@
   padding-top: 200px;
   margin-top: -135px;
   padding-bottom: 100px;
-  background: linear-gradient(white, #ffffb5);
+  background: linear-gradient(white, #ffbd7a);
 }
 
 #businessHoursContent {
@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(#ffffe4, #fd8978);
 }
 
 #businessHoursContent > center > h1 {
@@ -27,7 +28,9 @@
 }
 
 #businessHoursContent > center > h3 {
-  font-family: 'Shadows Into Light Two', cursive;
+  margin-bottom: 10px;
+  font-family: 'Italianno', cursive;
+  font-size: 30px;
   text-decoration: underline;
 }
 
@@ -41,6 +44,7 @@
 }
 
 @media screen and (max-width: 615px) {
+  #hoursImagesContainer {padding-bottom: 0;}
   #businessHoursContent > center > h1 {font-size: 14px}
   #businessHoursContent{width: 80vw; height: 80vw;}
   .businessHours {width: 100vw}

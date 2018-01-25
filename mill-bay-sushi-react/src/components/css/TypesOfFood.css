@@ -22,8 +22,7 @@
 .overlayContent {
     position: relative;
     top: 15%;
-    width: 100%;
-    width: 55%;
+    width: 60%;
     padding-bottom: 40px;
     margin:auto;
     border: double 10px black;
@@ -70,6 +69,10 @@
   opacity: 1;
 }
 
+#foodNamesContainer {
+  padding: 30px;
+}
+
 #previousPage {
   z-index: 1;
   opacity: 0.6;
@@ -86,9 +89,14 @@
   opacity: 1;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 550px) {
+  #foodNamesContainer {padding: 20px;}
+  .overlayContent {width: 90%;}
   .overlay a {font-size: 20px}
+  #nextPage {font-size: 40px; opacity: 0.3;}
+  #previousPage {font-size: 40px;opacity: 0.3;}
   .overlay .closebtn {
+    opacity: 0.3;
     font-size: 40px;
     top: 15px;
     right: 35px;
