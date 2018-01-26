@@ -97,7 +97,7 @@ class Contact extends Component {
             mapElement={<div id={classes.mapElement} />}
             />
         </div>
-        <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Illustration & Photography & Website: wonpark89@gmail.com</center>
+        <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Website created by: wonpark89@gmail.com</center>
       </MuiThemeProvider>
     );
   }

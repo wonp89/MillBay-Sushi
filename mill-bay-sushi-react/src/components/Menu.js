@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import TopSlideImages from './container/TopSlidePhotos'
 import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
-import middleImg from './img/middleImage.jpg'
 import pwPatternImage from './img/pw_pattern.png'
 import cloud from './img/cloud.png'
 import togoMenu from './img/MillBaySushi-TogoMenu.pdf'

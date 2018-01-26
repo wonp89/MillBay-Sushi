@@ -83,6 +83,7 @@
   font-family: 'Shadows Into Light Two', cursive;
   color: black;
   margin-top:0;
+  font-size: 30px;
 }
 
 #menuContent > a > span:hover {

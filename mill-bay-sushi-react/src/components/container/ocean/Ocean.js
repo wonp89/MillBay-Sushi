@@ -15,13 +15,21 @@ import gallery11 from '../../img/galleries/gallery11.jpg'
 import gallery12 from '../../img/galleries/gallery12.jpg'
 import gallery13 from '../../img/galleries/gallery13.jpg'
 import gallery14 from '../../img/galleries/gallery14.jpg'
+import WOW from 'wowjs';
 
 
 class OceanImages extends Component {
+  componentDidMount() {
+    new WOW.WOW().init();
+  }
   render() {
 
     return (
     <div id={classes.ocean}>
+      <div id={classes.galleryHeading} className="wow fadeInDown">
+          <h1 id={classes.gHeading}>G A L L E R I E S</h1>
+          <p id={classes.gParagraph}>Come join us for great culinary experience.</p>
+      </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery} alt="" />
@@ -98,7 +106,7 @@ class OceanImages extends Component {
           <div className={classes.desc}>Add a description of the image here</div>
         </div>
       </div>
-        <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Illustration & Photo & Website: wonpark89@gmail.com</center>
+        <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Website created by: wonpark89@gmail.com</center>
     </div>
     )
   }

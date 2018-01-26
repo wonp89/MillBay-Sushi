@@ -6,7 +6,26 @@
   max-width: 1440px;
 }
 
-/*---- OceanImages.css -------*/
+#galleryHeading {
+  margin-top: -300px;
+  margin-bottom: 100px;
+}
+
+#gHeading {
+  margin: 0;
+  color: white;
+  font-size:70px;
+  font-family: 'Lato', sans-serif;
+}
+
+#gParagraph {
+  color: white;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+}
+
+
 .gallery {
     margin: 5px;
     float: left;
@@ -21,12 +40,13 @@
 }
 
 .desc {
-    width: 50%;
+    width: 180px;
     margin: auto;
-    margin-top: -20px;
+    margin-top: -22px;
     background-color: white;
     padding: 5px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .galleryContainer {
@@ -43,4 +63,15 @@
   background-color: #2d5056;
   font-size: 13px;
   max-width: 1440px;
+}
+
+@media screen and (max-width: 600px) {
+  .desc {width: 150px;}
+  .desc h3 {font-size: 15px;}
+  .desc p {font-size: 13px;}
+}
+
+@media screen and (max-width: 780px) {
+  #gHeading {font-size: 45px;}
+  #gParagraph {font-size: 16px;}
 }
