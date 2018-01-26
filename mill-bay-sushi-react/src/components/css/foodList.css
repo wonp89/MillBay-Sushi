@@ -12,6 +12,7 @@
 }
 
 #category {
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0;
@@ -19,6 +20,7 @@
 }
 
 #nameStyle {
+  font-family: 'Lato', sans-serif;
   color: black;
   display: inline-block;
   margin-bottom: 0;
@@ -30,6 +32,7 @@
 }
 
 #priceStyle {
+  font-family: 'Lato', sans-serif;
   display: inline-block;
   margin-bottom: 0;
   margin-left: 20px;

@@ -76,7 +76,7 @@ class Menu extends Component {
                 <span>Take Out Menu PDF</span>
               </a>
             </div>
-            <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '130px'}}>
+            <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '30px'}}>
               <img src={cloud} style={{position: 'sticky', zIndex: '-1'}} alt="" />
             </div>
             <Hours className='wow fadeIn'/>

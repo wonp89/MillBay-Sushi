@@ -15,6 +15,7 @@ import gallery11 from '../../img/galleries/gallery11.jpg'
 import gallery12 from '../../img/galleries/gallery12.jpg'
 import gallery13 from '../../img/galleries/gallery13.jpg'
 import gallery14 from '../../img/galleries/gallery14.jpg'
+import whiteStroke from '../../img/whiteStroke.png'
 import WOW from 'wowjs';
 
 
@@ -29,6 +30,7 @@ class OceanImages extends Component {
       <div id={classes.galleryHeading} className="wow fadeInDown">
           <h1 id={classes.gHeading}>G A L L E R I E S</h1>
           <p id={classes.gParagraph}>Come join us for great culinary experience.</p>
+          <img id={classes.whiteStroke} src={whiteStroke} />
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>

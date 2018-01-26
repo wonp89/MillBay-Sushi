@@ -30,7 +30,6 @@
   box-sizing:border-box;
   margin-left: 10px;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Shadows Into Light Two', cursive;
 }
 
 #sashimiMiddleImage {
@@ -80,7 +79,7 @@
 }
 
 #menuContent > a > span {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Lato', cursive;
   color: black;
   margin-top:0;
   font-size: 30px;
