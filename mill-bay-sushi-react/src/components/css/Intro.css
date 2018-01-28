@@ -81,7 +81,7 @@
 @media screen and (max-width:500px) {
   #descriptionContainer{display: block;}
   #descriptionContainer > div {width: 90%;margin: auto;}
-  #introParagraph {padding: 0;}
+  #paragraph {margin: 0 auto;width: 90%;padding: 0;}
   #logo { width: 260px;}
 }
 

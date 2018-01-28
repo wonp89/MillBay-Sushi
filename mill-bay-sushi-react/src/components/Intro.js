@@ -21,7 +21,7 @@ class Intro extends Component {
                 <div className="wow fadeIn">
                   <img src={brush} id={classes.brushStroke}/>
                   <p id={classes.introParagraph} >
-                  Mill Bay Sushi is a Japanese restaurant located at beautiful town Mill bay, BC. Mill Bay sushi can offer you amazing dining experience with outstanding quality service that will exceed your expectation. Our chefs have years of experience and they ensure freshness of the ingredients and create innovative dishes.
+                  Mill Bay Sushi is a Japanese restaurant located at the beautiful town Mill bay, BC. Mill Bay sushi can offer you amazing dining experience with outstanding quality service that will exceed your expectation. Our chefs have years of experience and they ensure freshness of the ingredients and create innovative dishes.
                   The restaurant has near 150 seats that can provide plenty of space for large groups of people who want our Japanese and Korean cuisine. Please contact us for more information.
                   </p>
                 </div>
