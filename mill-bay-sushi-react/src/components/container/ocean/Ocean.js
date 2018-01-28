@@ -39,73 +39,73 @@ class OceanImages extends Component {
         </div>
         <div className={classes.gallery}>
           <img src={gallery1} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Cucumber Salad Roll</h3><p>$11.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery2} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Kiss of Fire</h3><p>$18.90</p></div>
         </div>
         <div className={classes.gallery}>
           <img src={gallery3} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Cheese Lava Roll</h3><p>$20.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery4} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Butterfly Roll</h3><p>$18.90</p></div>
         </div>
         <div className={classes.gallery}>
           <img src={gallery5} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Firecracker Roll</h3><p>$16.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery6} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>M80 Roll</h3><p>$20.90</p></div>
         </div>
         <div className={classes.gallery}>
           <img src={gallery7} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Futomaki Roll</h3><p>$10.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery8} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Crazy Roll</h3><p>$20.90</p></div>
         </div>
         <div className={classes.gallery}>
           <img src={gallery9} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Beef Udon</h3><p>$11.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery10} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Tuna Tataki</h3><p>$12.90</p></div>
         </div>
         <div className={classes.gallery}>
           <img src={gallery11} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Monkey Brain</h3><p>$7.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery12} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Kamikaze Salmon Roll</h3><p>$11.90</p></div>
         </div>
         <div className={classes.gallery}>
           <img src={gallery13} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Caterpillar Roll</h3><p>$11.90</p></div>
         </div>
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
           <img src={gallery14} alt="" />
-          <div className={classes.desc}>Add a description of the image here</div>
+          <div className={classes.desc}><h3>Beef Teriyaki</h3><p>$12.90</p></div>
         </div>
       </div>
         <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Website created by: wonpark89@gmail.com</center>
