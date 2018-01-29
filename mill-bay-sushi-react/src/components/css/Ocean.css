@@ -1,6 +1,6 @@
 #ocean {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #061f24;
   text-align: center;
   max-width: 1440px;
@@ -69,8 +69,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  .gallery {margin: 0; padding: 0;}
-  .gallery > h1 {width:45vw}
+  .gallery {margin: 0; padding: 0;max-width: 45vw;}
+  .gallery > h1 {width:40vw}
   .desc {width: 150px;padding:0;}
   .desc h3 {font-size: 15px;}
   .desc p {font-size: 13px;}
