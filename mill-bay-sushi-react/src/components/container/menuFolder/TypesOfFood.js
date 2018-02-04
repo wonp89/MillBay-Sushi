@@ -1,7 +1,6 @@
 import React from 'react';
 import FoodList from './FoodList';
 import classes from '../../css/TypesOfFood.css';
-import treeBackgroundImage from '../../img/tree_bark.png'
 import {Animated} from "react-animated-css";
 
 const menuTypes =  (props) => {

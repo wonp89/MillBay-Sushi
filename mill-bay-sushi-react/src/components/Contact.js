@@ -83,7 +83,6 @@ class Contact extends Component {
               </div>
               {button}
             </form>
-
             <div id={classes.contactHeadingContent} style={this.state.sent === false ? {border: "none"} : {border: "solid rgb(100, 216, 242)"}} >
                   <h1 className="wow fadeInUp"><a href="tel:+2509297117" id={classes.phoneNumber}> 250. 929.  7117</a></h1>
                   <p style={{animationDelay: '0.2s'}} className="wow fadeInUp"><span>Email</span> millbay.sushi@gmail.com</p>

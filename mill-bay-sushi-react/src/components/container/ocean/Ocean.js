@@ -30,7 +30,7 @@ class OceanImages extends Component {
       <div id={classes.galleryHeading} className="wow fadeInDown">
           <h1 id={classes.gHeading}>G A L L E R I E S</h1>
           <p id={classes.gParagraph}>Come join us for great culinary experience.</p>
-          <img id={classes.whiteStroke} src={whiteStroke} />
+          <img id={classes.whiteStroke} src={whiteStroke} alt="" />
       </div>
       <div className={classes.galleryContainer}>
         <div className={classes.gallery}>
