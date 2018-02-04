@@ -20,8 +20,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'mill-bay-sushi-react/public')))
-// app.use(express.static(path.join(__dirname, 'mill-bay-sushi-react/build')))
+// app.use(express.static(path.join(__dirname, 'mill-bay-sushi-react/public')))
+app.use(express.static(path.join(__dirname, 'mill-bay-sushi-react/build')))
 app.use(menu);
 app.use(contact);
 
