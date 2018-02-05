@@ -59,7 +59,7 @@ class Menu extends Component {
             </Scroll>
             <Intro />
             <TopSlideImages />
-            <div id={classes.AllTypes} style={{backgroundImage: 'url(http://localhost:3000/img/pw_pattern.png)'}}>
+            <div id={classes.AllTypes} style={{backgroundImage: 'url(http://www.millbaysushi.com/img/pw_pattern.png)'}}>
                 <div id={classes.menuHeading} className="wow slideInLeft">
                   <h1>MENU</h1>
                 </div>
