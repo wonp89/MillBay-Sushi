@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Map from './container/Map'
-import salmonPainting from './img/salmonPainting1.png'
 import classes from './css/Contact.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -48,7 +47,7 @@ class Contact extends Component {
     this.state.sent === false ? button = <RaisedButton label="SEND" type="submit" primary={true} /> : button = <RaisedButton label="MESSAGE SENT" type="submit" primary={true} disabled />
 
     const style = {
-      backgroundImage: 'url(' + salmonPainting + ')'
+      backgroundImage: 'url(http://localhost:3000/img/salmonPainting1.png)'
     };
 
     return (

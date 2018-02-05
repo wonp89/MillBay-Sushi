@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
-import topImg from '../img/topImage1.jpg'
-import topImg2 from '../img/topImage2.jpg'
-import topImg3 from '../img/topImage4.jpg'
 import classes from '../css/topSlidePhotos.css';
 import WOW from 'wowjs';
 
 class TopIllustration extends Component {
+
   state = {
     slideImgs: [
-      {images: [topImg, topImg2, topImg3], index: 0}
-    ]
-  }
+                {images: [
+                          'http://localhost:3000/img/topImages/topImage1.jpg',
+                          'http://localhost:3000/img/topImages/topImage2.jpg',
+                          'http://localhost:3000/img/topImages/topImage3.jpg'
+                         ],
+                  index: 0}
+                ]
+          }
+
   componentDidMount() {
     new WOW.WOW().init();
       var index = 0;

@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import TopSlideImages from './container/TopSlidePhotos'
 import Scroll from 'react-scroll-to-element';
 import Intro from './Intro';
-import pwPatternImage from './img/pw_pattern.png'
-import cloud from './img/cloud.png'
-import togoMenu from './img/MillBaySushi-TogoMenu.pdf'
 import MenuPanels from './container/menuFolder/MenuPanels';
 import Hours from './container/hours/HoursImages';
 import SalmonPainting2 from './container/paintings/Painting2';
@@ -62,7 +59,7 @@ class Menu extends Component {
             </Scroll>
             <Intro />
             <TopSlideImages />
-            <div id={classes.AllTypes} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
+            <div id={classes.AllTypes} style={{backgroundImage: 'url(http://localhost:3000/img/pw_pattern.png)'}}>
                 <div id={classes.menuHeading} className="wow slideInLeft">
                   <h1>MENU</h1>
                 </div>
@@ -70,14 +67,14 @@ class Menu extends Component {
                    <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
                 )}
             </div>
-            <div id={classes.menuContent} style={{backgroundImage: 'url(' + pwPatternImage + ')'}}>
+            <div id={classes.menuContent} style={{backgroundImage: 'url(http://localhost:3000/img/pw_pattern.png)'}}>
               <h3 style={{marginTop: '0'}} id={classes.takeOutMenuPointer}>▼</h3>
-              <a href={togoMenu} style={{marginBottom: '0'}} target="_blank">
+              <a href="http://localhost:3000/img/MillBaySushi-TogoMenu.pdf" style={{marginBottom: '0'}}  rel="noopener noreferrer" target="_blank">
                 <span>Take Out Menu PDF</span>
               </a>
             </div>
             <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '30px'}}>
-              <img src={cloud} style={{position: 'sticky', zIndex: '-1'}} alt="" />
+              <img src="http://localhost:3000/img/cloud.png" style={{position: 'sticky', zIndex: '-1'}} alt="" />
             </div>
             <Hours className='wow fadeIn'/>
             <div>

@@ -1,6 +1,4 @@
 import React from 'react';
-import oceanPainting from '../../img/salmonPainting2.png'
-import footerImageSalmons from '../../img/salmonPainting2Salmons.png'
 import { Parallax } from 'react-scroll-parallax';
 
 const Footer =  (props) => {
@@ -13,10 +11,10 @@ const Footer =  (props) => {
             slowerScrollRate
             tag="figure"
             >
-              <img src={footerImageSalmons} style={{width: '40%'}} alt="" />
+              <img src='http://localhost:3000/img/salmonPainting2Salmons.png' style={{width: '40%'}} alt="" />
             </Parallax>
           </div>
-            <img src={oceanPainting} style={{width: '100%', marginTop: '-600px'}} alt=""/>
+            <img src='http://localhost:3000/img/salmonPainting2.png' style={{width: '100%', marginTop: '-600px'}} alt=""/>
       </div>
     )
   }

@@ -29,6 +29,7 @@
     margin: 5px;
     float: left;
     padding: 10px;
+    width: 40%;
 }
 
 .gallery > img {
@@ -52,6 +53,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #whiteStroke {
