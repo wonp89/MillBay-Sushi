@@ -67,7 +67,7 @@ class Menu extends Component {
                    <MenuPanels key={index} click={() => this.showMenu(list.id)} name={list.name} index={index} />
                 )}
             </div>
-            <div id={classes.menuContent} style={{backgroundImage: 'url(http://localhost:3000/img/pw_pattern.png)'}}>
+            <div id={classes.menuContent} style={{backgroundImage: 'url(http://www.millbaysushi.com/img/pw_pattern.png)'}}>
               <h3 style={{marginTop: '0'}} id={classes.takeOutMenuPointer}>▼</h3>
               <a href="http://www.millbaysushi.com/img/MillBaySushi-TogoMenu.pdf" style={{marginBottom: '0'}}  rel="noopener noreferrer" target="_blank">
                 <span>Take Out Menu PDF</span>
