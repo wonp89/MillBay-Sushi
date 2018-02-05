@@ -13,7 +13,7 @@ class Intro extends Component {
   render() {
     return (
       <div id={classes.Intro}>
-        <img id={classes.logo} src="http://localhost:3000/img/logo.png" alt="" />
+        <img id={classes.logo} src="http://www.millbaysushi.com/img/logo.png" alt="" />
           <div id={classes.paragraph}>
               <div id={classes.introContainter}>
                 <div className="wow fadeIn">
