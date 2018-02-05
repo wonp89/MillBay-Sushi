@@ -7,9 +7,9 @@ class TopIllustration extends Component {
   state = {
     slideImgs: [
                 {images: [
-                          'http://localhost:3000/img/topImages/topImage1.jpg',
-                          'http://localhost:3000/img/topImages/topImage2.jpg',
-                          'http://localhost:3000/img/topImages/topImage3.jpg'
+                          'http://www.millbaysushi.com/img/topImages/topImage1.jpg',
+                          'http://www.millbaysushi.com/img/topImages/topImage2.jpg',
+                          'http://www.millbaysushi.com/img/topImages/topImage3.jpg'
                          ],
                   index: 0}
                 ]

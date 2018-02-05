@@ -33,12 +33,12 @@ class OceanImages extends Component {
       <div id={classes.galleryHeading} className="wow fadeInDown">
           <h1 id={classes.gHeading}>G A L L E R I E S</h1>
           <p id={classes.gParagraph}>Come join us for great culinary experience.</p>
-          <img id={classes.whiteStroke} src="http://localhost:3000/img/whiteStroke.png" alt="" />
+          <img id={classes.whiteStroke} src="http://www.millbaysushi.com/img/whiteStroke.png" alt="" />
       </div>
         <div className={classes.galleryContainer}>
           {this.state.foodNames.map((food, index) => (
             <div className={classes.gallery}>
-              <img src={"http://localhost:3000/img/galleries/gallery" + index + ".jpg"} alt="" />
+              <img src={"http://www.millbaysushi.com/img/galleries/gallery" + index + ".jpg"} alt="" />
               <div className={classes.desc}><h3>{food.name}</h3>
                 <p>{food.price}</p>
               </div>

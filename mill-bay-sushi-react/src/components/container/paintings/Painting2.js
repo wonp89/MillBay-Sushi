@@ -11,10 +11,10 @@ const Footer =  (props) => {
             slowerScrollRate
             tag="figure"
             >
-              <img src='http://localhost:3000/img/salmonPainting2Salmons.png' style={{width: '40%'}} alt="" />
+              <img src='http://www.millbaysushi.com/img/salmonPainting2Salmons.png' style={{width: '40%'}} alt="" />
             </Parallax>
           </div>
-            <img src='http://localhost:3000/img/salmonPainting2.png' style={{width: '100%', marginTop: '-600px'}} alt=""/>
+            <img src='http://www.millbaysushi.com/img/salmonPainting2.png' style={{width: '100%', marginTop: '-600px'}} alt=""/>
       </div>
     )
   }

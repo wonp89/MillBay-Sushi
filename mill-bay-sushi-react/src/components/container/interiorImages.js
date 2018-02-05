@@ -6,14 +6,14 @@ import {GridList, GridTile} from 'material-ui/GridList';
 class InteriorImages extends Component {
   state = {
           interiorImgs: [
-              'http://localhost:3000/img/interior/interior1.png',
-              'http://localhost:3000/img/interior/interior2.png',
-              'http://localhost:3000/img/interior/interior3.png',
-              'http://localhost:3000/img/interior/interior4.png',
-              'http://localhost:3000/img/interior/interior5.png',
-              'http://localhost:3000/img/interior/interior6.png',
-              'http://localhost:3000/img/interior/interior7.png',
-              'http://localhost:3000/img/interior/interior8.png',
+              'http://www.millbaysushi.com/img/interior/interior1.png',
+              'http://www.millbaysushi.com/img/interior/interior2.png',
+              'http://www.millbaysushi.com/img/interior/interior3.png',
+              'http://www.millbaysushi.com/img/interior/interior4.png',
+              'http://www.millbaysushi.com/img/interior/interior5.png',
+              'http://www.millbaysushi.com/img/interior/interior6.png',
+              'http://www.millbaysushi.com/img/interior/interior7.png',
+              'http://www.millbaysushi.com/img/interior/interior8.png',
           ]}
 
   selectedImage(photo) {
@@ -49,8 +49,8 @@ render() {
            return <img src={largeImg} key={index} className={classes.largeImgs} alt="Interior Images"/>
           }
        )}
-        <img src="http://localhost:3000/img/interior/interior1.png" className={classes.largeImgs} ref="firstImg" alt="" />
-        <img src="http://localhost:3000/img/interior/blackBackground.png" className={classes.blackBackground} alt="" />
+        <img src="http://www.millbaysushi.com/img/interior/interior1.png" className={classes.largeImgs} ref="firstImg" alt="" />
+        <img src="http://www.millbaysushi.com/img/interior/blackBackground.png" className={classes.blackBackground} alt="" />
       </MuiThemeProvider>
     )
   }

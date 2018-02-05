@@ -69,12 +69,12 @@ class Menu extends Component {
             </div>
             <div id={classes.menuContent} style={{backgroundImage: 'url(http://localhost:3000/img/pw_pattern.png)'}}>
               <h3 style={{marginTop: '0'}} id={classes.takeOutMenuPointer}>▼</h3>
-              <a href="http://localhost:3000/img/MillBaySushi-TogoMenu.pdf" style={{marginBottom: '0'}}  rel="noopener noreferrer" target="_blank">
+              <a href="http://www.millbaysushi.com/img/MillBaySushi-TogoMenu.pdf" style={{marginBottom: '0'}}  rel="noopener noreferrer" target="_blank">
                 <span>Take Out Menu PDF</span>
               </a>
             </div>
             <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '30px'}}>
-              <img src="http://localhost:3000/img/cloud.png" style={{position: 'sticky', zIndex: '-1'}} alt="" />
+              <img src="http://www.millbaysushi.com/img/cloud.png" style={{position: 'sticky', zIndex: '-1'}} alt="" />
             </div>
             <Hours className='wow fadeIn'/>
             <div>

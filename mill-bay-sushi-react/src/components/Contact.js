@@ -47,7 +47,7 @@ class Contact extends Component {
     this.state.sent === false ? button = <RaisedButton label="SEND" type="submit" primary={true} /> : button = <RaisedButton label="MESSAGE SENT" type="submit" primary={true} disabled />
 
     const style = {
-      backgroundImage: 'url(http://localhost:3000/img/salmonPainting1.png)'
+      backgroundImage: 'url(http://www.millbaysushi.com/img/salmonPainting1.png)'
     };
 
     return (
