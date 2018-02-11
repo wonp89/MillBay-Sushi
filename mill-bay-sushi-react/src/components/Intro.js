@@ -40,7 +40,7 @@ class Intro extends Component {
           <div>
             <h3>Restaurant</h3>
               <img src="http://www.millbaysushi.com/img/brushStroke.png" id={classes.brushStroke} alt="" />
-            <p>Fall in love with our beauifully designed restaurant. The peaceful interior will make you feel comfortable. We also have a private room for a large group which can fit twenty people. Bring all you family and friends. Just sit back down, relax, and taste. </p>
+            <p>Fall in love with our beauifully designed restaurant. The peaceful interior will make you feel comfortable. We also have a private room for a large group which can fit twenty-four people. Bring all you family and friends. Just sit back down, relax, and taste. </p>
           </div>
         </div>
       </div>

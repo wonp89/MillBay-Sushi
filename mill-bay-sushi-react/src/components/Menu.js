@@ -68,9 +68,8 @@ class Menu extends Component {
                 )}
             </div>
             <div id={classes.menuContent} style={{backgroundImage: 'url(http://www.millbaysushi.com/img/pw_pattern.png)'}}>
-              <h3 style={{marginTop: '0'}} id={classes.takeOutMenuPointer}>▼</h3>
               <a href="http://www.millbaysushi.com/img/MillBaySushi-TogoMenu.pdf" style={{marginBottom: '0'}}  rel="noopener noreferrer" target="_blank">
-                <span>Take Out Menu PDF</span>
+                <span>TAKE OUT MENU</span>
               </a>
             </div>
             <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '30px'}}>

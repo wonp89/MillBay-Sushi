@@ -28,7 +28,8 @@
 
 #businessHoursContent > center > h3 {
   margin-bottom: 10px;
-  font-family: 'Italianno', cursive;
+  /*font-family: 'Italianno', cursive;*/
+  font-family: 'Nanum Brush Script', cursive;
   font-size: 40px;
 }
 
