@@ -28,7 +28,7 @@ class Intro extends Component {
                 </Scroll>
               </div>
           </div>
-          <img src="http://localhost:3000/img/bamboo.png" alt="" />
+          <img src="http://millbaysushi.com/img/bamboo.png" alt="" />
         <div id={classes.IntroImages}>
           <InteriorPhotos />
         </div>
