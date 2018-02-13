@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: solid 4px black;
+  border-top: solid 4px black;
   background-color: black;
 }
 
