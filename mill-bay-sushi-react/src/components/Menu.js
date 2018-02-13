@@ -69,7 +69,7 @@ class Menu extends Component {
             </div>
             <div id={classes.menuContent} style={{backgroundImage: 'url(http://www.millbaysushi.com/img/pw_pattern.png)'}}>
               <a href="http://www.millbaysushi.com/img/MillBaySushi-TogoMenu.pdf" style={{marginBottom: '0'}}  rel="noopener noreferrer" target="_blank">
-                <span>TAKE OUT MENU</span>
+                <span>⚬○. TAKE OUT MENU .○⚬</span>
               </a>
             </div>
             <div style={{maxWidth: '1440px', overflow: 'hidden', paddingBottom: '30px'}}>

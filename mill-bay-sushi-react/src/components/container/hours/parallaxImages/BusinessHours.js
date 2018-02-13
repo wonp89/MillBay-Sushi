@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
 import classes from '../../../css/hoursImages.css'
 import { Parallax } from 'react-scroll-parallax';
-import WOW from 'wowjs';
 
-
-class parallaxImages1 extends Component {
-  componentDidMount() {
-    new WOW.WOW().init();
-  }
-  render() {
+const parallaxImages1 = (props) => {
     return (
           <Parallax
             offsetYMax={0}
@@ -26,7 +20,6 @@ class parallaxImages1 extends Component {
             </div>
           </Parallax>
     )
-  }
 }
 
 export default parallaxImages1;
