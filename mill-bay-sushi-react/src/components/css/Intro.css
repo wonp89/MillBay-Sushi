@@ -13,6 +13,10 @@
   color: black;
 }
 
+#bamboo {
+  width: 100%;
+}
+
 #brushStroke {
   width: 65px;
   margin-top: 20px;

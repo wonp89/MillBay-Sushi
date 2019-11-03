@@ -131,7 +131,7 @@ router.get('/menu', function (req, res, next) {
           },
           {
             name: "Spicy Tuna Sashimi (8pcs)",
-            price: "$15.90"
+            price: "$16.90"
           },
           {
             name: "Salmon Sashimi (8pcs)",
