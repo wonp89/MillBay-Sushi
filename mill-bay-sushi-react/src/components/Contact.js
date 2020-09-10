@@ -86,7 +86,7 @@ class Contact extends Component {
               <h1 className="wow fadeInUp"><a href="tel:+12509297117" id={classes.phoneNumber}> 250. 929.  7117</a></h1>
               <p style={{ animationDelay: '0.2s' }} className="wow fadeInUp"><span>Email</span> millbay.sushi@gmail.com</p>
               <p style={{ animationDelay: '0.3s' }} className="wow fadeInUp"><span>Address</span> 2720 Mill bay RD, Mill bay, BC, V0R 2P1</p>
-              <p style={{ animationDelay: '0.4s' }} className="wow fadeInUp"><span>Hours</span> Open 7 days a week 11:30AM ~ 9:00PM</p>
+              <p style={{ animationDelay: '0.4s' }} className="wow fadeInUp"><span>Hours</span> Open 7 days a week 11:30AM ~ 8:00PM</p>
             </div>
           </div>
           <Map googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOO071sg9pRmhLo_iBA0ycoKczwmMmfyA&v=3.exp&libraries=geometry,drawing,places"
