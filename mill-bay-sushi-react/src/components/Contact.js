@@ -81,10 +81,10 @@ class Contact extends Component {
                 </label>
               </div>
               {button}
+              <div id={classes.businessInquiries}>* We don't take food orders thorugh email. Business inquiries only.</div>
             </form>
             <div id={classes.contactHeadingContent} style={this.state.sent === false ? { border: "none" } : { border: "solid rgb(100, 216, 242)" }} >
               <h1 className="wow fadeInUp"><a href="tel:+12509297117" id={classes.phoneNumber}> 250. 929.  7117</a></h1>
-              <p style={{ animationDelay: '0.2s' }} className="wow fadeInUp"><span>Email</span> millbay.sushi@gmail.com</p>
               <p style={{ animationDelay: '0.3s' }} className="wow fadeInUp"><span>Address</span> 2720 Mill bay RD, Mill bay, BC, V0R 2P1</p>
               <p style={{ animationDelay: '0.4s' }} className="wow fadeInUp"><span>Hours</span> Open 7 days a week 12:00AM ~ 8:00PM</p>
             </div>
@@ -96,7 +96,7 @@ class Contact extends Component {
           />
         </div>
         <center className={classes.copyRight}>Copyright © 2018 by Mill Bay Sushi  All Rights Reserved. Website created by: wonpark89@gmail.com</center>
-      </MuiThemeProvider>
+      </MuiThemeProvider >
     );
   }
 }
