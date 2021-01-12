@@ -81,7 +81,7 @@ class Contact extends Component {
                 </label>
               </div>
               {button}
-              <div id={classes.businessInquiries}>* We don't take food orders thorugh email. Business inquiries only.</div>
+              <div id={classes.businessInquiries}>* We don't take food orders by email. Business inquiries only.</div>
             </form>
             <div id={classes.contactHeadingContent} style={this.state.sent === false ? { border: "none" } : { border: "solid rgb(100, 216, 242)" }} >
               <h1 className="wow fadeInUp"><a href="tel:+12509297117" id={classes.phoneNumber}> 250. 929.  7117</a></h1>
