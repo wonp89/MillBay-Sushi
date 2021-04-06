@@ -13,9 +13,9 @@ const parallaxImages1 = (props) => {
       <div id={classes.businessHoursContent}>
         <center>
           <h3 style={{ marginTop: '0' }}>Business</h3>
-          <h1>Hour 12:00am ~ 8:00pm, 7 Days</h1>
+          <h1>Hour 12:00pm ~ 8:00pm, 7 Days</h1>
           <h3 style={{ marginTop: '40px' }}>Lunch</h3>
-          <h1>Hour 12:00am ~ 2:30pm</h1>
+          <h1>Hour 12:00pm ~ 2:30pm</h1>
         </center>
       </div>
     </Parallax>
