@@ -26,7 +26,7 @@ class Intro extends Component {
             <Scroll type="id" element="Menu__AllTypes__2S_3b">
               <div id={classes.scrollToMenu}>GO TO MENU</div>
             </Scroll>
-            <a id={classes.goToOnlineOrderLink} href="https://order.codefusion.tech/menu">
+            <a id={classes.goToOnlineOrderLink} href="https://millbaysushi.ca/">
               <div id={classes.goToOnlineOrder}>ORDER ONLINE</div>
             </a>
           </div>
