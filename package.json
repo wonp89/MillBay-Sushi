@@ -18,7 +18,7 @@
     "express": "~4.15.5",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
-    "nodemailer": "^4.4.1",
+    "nodemailer": "^6.4.16",
     "serve-favicon": "~2.4.5",
     "xoauth2": "^1.2.0"
   }
