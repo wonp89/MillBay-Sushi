@@ -52,11 +52,34 @@
   cursor: pointer;
   margin-top: 40px;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+#goToOnlineOrder {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border: solid 2px #f25a3f;
+  color: #f25a3f;
+  margin: auto;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+#goToOnlineOrderLink {
+  text-decoration: none;
 }
 
 
 #scrollToMenu:hover {
   background-color: #b3deff;
+  transition: 0.3s;
+}
+
+#goToOnlineOrder:hover {
+  background-color: #ffccbb;
   transition: 0.3s;
 }
 
